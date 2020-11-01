@@ -1,0 +1,14 @@
+.Hero_container {
+  padding: 60px;
+}
+
+.Hero_copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.Hero_content ul {
+  padding: 0;
+}
