@@ -1,14 +1,29 @@
 .Hero_container {
-  padding: 60px;
+  padding: 10% 10%;
+  /* border: 1px solid #fff; */
 }
 
 .Hero_copy {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 20px;
+}
+.Hero_content {
+  /* border: 1px solid #fff; */
+}
+.Hero_content img {
+  width: 100%;
 }
 
 .Hero_content ul {
   padding: 0;
+  text-align: left;
+}
+.grabient {
+  background: -webkit-linear-gradient(right, #cd5f81, #4c5798, #06bab6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

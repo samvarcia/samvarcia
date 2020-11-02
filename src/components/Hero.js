@@ -1,6 +1,5 @@
 import React from 'react'
-import samvarcia from '../assets/images/NameIs.svg'
-
+import samvarcia from '../assets/images/SamuelGarcia.png'
 import '../assets/styles/components/Hero.css'
 
 export default function Hero() {
@@ -12,10 +11,10 @@ export default function Hero() {
           <div className="Hero_copy">
             <ul>
               <p>Frontend Developer</p>
-              <p>UI/UX Designer</p>
+              <p className="grabient">UI/UX Designer</p>
               <p>Entrepreneur</p>
             </ul>
-            <a href="mailto:samvarcia@gmail.com">s@samvarcia.com</a>
+            <a className="grabient" href="mailto:samvarcia@gmail.com">s@samvarcia.com</a>
           </div>
         </div>
       </div>
