@@ -6,6 +6,7 @@ import About from './components/About'
 import Rayo from './assets/images/rayo.svg'
 import Sticker from './assets/images/sticker.svg'
 import Planet from './assets/images/planet.svg'
+import Smile from './assets/images/smile.svg'
 import './assets/styles/App.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <img className="light" src={Rayo} alt="Light"/>
       <img className="sticker" src={Sticker} alt="Holo"/>
       <img className="planet" src={Planet} alt="Pluto"/>
+      <img className="smile" src={Smile} alt="Smile"/>
       <div className="App">
         <Header/>
         <Hero/>

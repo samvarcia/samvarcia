@@ -9,3 +9,11 @@
   font-size: 25px;
   position: inherit;
 }
+.grabient {
+  background: -webkit-linear-gradient(right, #cd5f81, #4c5798, #06bab6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about_text a {
+  text-decoration: none;
+}
