@@ -1,10 +1,10 @@
 .card {
-  border: 1px solid white;
-  margin: 3%;
+  border: 3px solid white;
+  margin: 20px;
   transition: ease-in;
   position: relative;
   padding: 30px;
-  width: 90%;
+  width: 70%;
 }
 .justify {
   text-align: justify;
@@ -13,7 +13,7 @@
   text-align: center;
 }
 .card:hover {
-  border: 1px solid;
+  border: 3px solid;
   border-image-source: linear-gradient(45deg, #06bab6, #cd5f81, #4c5798);
   border-image-slice: 1;
 }
