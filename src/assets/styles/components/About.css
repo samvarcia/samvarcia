@@ -17,3 +17,10 @@
 .about_text a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .About {
+    position: absolute;
+    font-size: 18px;
+  }
+}

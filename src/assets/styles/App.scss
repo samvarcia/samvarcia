@@ -33,5 +33,11 @@ body {
 .smile {
   position: absolute;
   left: 0%;
-  top: 280%;
+  top: 250%;
+}
+@media screen and (max-width: 768px) {
+  .planet {
+    width: 40%;
+    top: 350%;
+  }
 }

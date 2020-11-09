@@ -11,10 +11,10 @@
   flex-wrap: wrap;
   font-size: 20px;
 }
-.Hero_content {
-  /* border: 1px solid #fff; */
+.mobilesam {
+  display: none;
 }
-.Hero_content img {
+.desktopsam {
   width: 100%;
 }
 
@@ -26,4 +26,18 @@
   background: -webkit-linear-gradient(right, #cd5f81, #4c5798, #06bab6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .mobilesam {
+    display: inherit;
+    width: 100%;
+  }
+  .desktopsam {
+    display: none;
+  }
+  .Hero_copy {
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+  }
 }
