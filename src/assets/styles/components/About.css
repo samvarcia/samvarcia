@@ -1,3 +1,6 @@
+.About {
+  position: absolute;
+}
 .About_content {
   display: flex;
   flex-direction: column;
@@ -20,7 +23,6 @@
 
 @media screen and (max-width: 768px) {
   .About {
-    position: absolute;
     font-size: 18px;
   }
 }

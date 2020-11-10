@@ -10,7 +10,10 @@ $title: 30px;
 $left: 5%;
 
 body {
-  background-color: #000;
+  background: url(./background.gif) no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $white;
   text-align: center;
 }
@@ -27,13 +30,18 @@ body {
 .planet {
   position: absolute;
   right: 0;
-  top: 280%;
+  top: 260%;
   width: 20%;
 }
 .smile {
   position: absolute;
   left: 0%;
   top: 250%;
+}
+.shine {
+  position: absolute;
+  left: 0%;
+  top: 10%;
 }
 @media screen and (max-width: 768px) {
   .planet {
