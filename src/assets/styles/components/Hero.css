@@ -5,10 +5,10 @@
 
 .Hero_copy {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   font-size: 20px;
 }
 .mobilesam {
