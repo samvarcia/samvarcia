@@ -25,12 +25,12 @@ body {
 .sticker {
   position: absolute;
   left: 0;
-  top: 150%;
+  bottom: -50%;
 }
 .planet {
   position: absolute;
   right: 0;
-  top: 260%;
+  bottom: -800px;
   width: 20%;
 }
 .smile {
@@ -43,9 +43,10 @@ body {
   left: 0%;
   top: 10%;
 }
+
 @media screen and (max-width: 768px) {
   .planet {
     width: 40%;
-    top: 350%;
+    bottom: -150%;
   }
 }

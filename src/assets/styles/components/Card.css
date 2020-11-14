@@ -8,7 +8,6 @@
   border: 3px solid white;
   margin: 20px;
   color: #eee;
-  transition: ease-in;
   position: relative;
   padding: 30px;
   width: 90%;
@@ -28,4 +27,13 @@
   text-decoration: none;
   color: #eee;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .cardlink {
+    width: 80%;
+  }
+  .card {
+    margin: 5px;
+    width: 80%;
+  }
 }
