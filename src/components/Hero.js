@@ -21,7 +21,7 @@ class Hero extends React.Component {
                 <p className="grabient">UI/UX Designer</p>
                 <p>Entrepreneur</p>
               </ul>
-              <a className="grabient" href="mailto:samvarcia@gmail.com">s@samvarcia.com</a>
+              <a className="grabient" href="mailto:samvarcia@gmail.com">samvarcia@gmail.com</a>
             </div>
           </div>
         </div>
