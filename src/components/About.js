@@ -3,12 +3,9 @@ import '../assets/styles/components/About.css'
 import WOW from 'wowjs';
 
 class About extends React.Component {
-  componentDidMount() {
-    new WOW.WOW().init();
-  }
   render(){
     return(
-      <div className="About wow animate__bounceIn" data-wow-duration="4s">
+      <div className="About">
         <div className="About_container">
           <div className="About_content">
             <h1>ABOUT ME</h1>
