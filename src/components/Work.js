@@ -20,9 +20,9 @@ class Work extends React.Component {
                   CardLink="https://www.dinero.com/edicion-impresa/management/articulo/historia-de-samuel-garcia-cofundador-de-uziday/266407"
                 />
               <Card 
-                CardTitle="Meniacs - Founder"
-                CardText="I created this clothing store to reflect all that tech culture means to me and many more people"
-                CardLink="https://meniacs.co/"
+                CardTitle="Lesly Zerna's portfolio - Freelancer"
+                CardText="Freelancer job created for software developer Lesly Zerna, developed with ReactJS and designed with Figma."
+                CardLink="https://lesly.vercel.app/"
               />
               <Card 
                 CardTitle="Ziggy - Developer"
