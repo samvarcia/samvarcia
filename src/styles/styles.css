@@ -1,0 +1,28 @@
+@font-face {
+  src: url("../font/Swis721_BT_Bold.ttf");
+  font-family: Swis;
+}
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Swis;
+  color: #030508;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  /* font-size: 60px; */
+}
+a {
+  /* font-size: 30px; */
+  color: #030508;
+  text-decoration: none;
+}
+main div {
+  text-align: center;
+}
