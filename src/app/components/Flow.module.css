@@ -11,21 +11,26 @@
   margin-bottom: 100px;
   display: flex;
   align-items: center;
+  overflow-x: auto;
+  /* overflow: visible; */
+}
+
+.flow::-webkit-scrollbar {
+  display: none;
 }
 
 .flow img {
   margin: 0px 50px;
   /* SHADOW */
-
+  /* 
   filter: drop-shadow(0px 29px 33px rgba(0, 0, 0, 0.392209)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.113564));
-  backdrop-filter: blur(36.6968px);
+  backdrop-filter: blur(36.6968px); */
 }
 
-.bloop {
+.web {
   width: auto;
-  height: 400px;
-  border-radius: 9px;
-
+  height: 450px;
+  /* border-radius: 9px; */
 }
 
 .vertical {
