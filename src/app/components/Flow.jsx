@@ -2,17 +2,43 @@ import styles from "./Flow.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { useRef } from "react";
 
 export default function Flow() {
+  const flowRef = useRef();
   const { scrollXProgress } = useScroll();
   const scaleX = useSpring(scrollXProgress, {
-    stiffness: 500,
-    damping: 70,
+    stiffness: 10,
+    damping: 30,
     restDelta: 0.001,
   });
+  const { scrollYProgress } = useScroll();
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 10,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  const flowbar = flowRef.current;
+
+  // flowbar.addEventListener("wheel", (evt) => {
+  //   evt.preventDefault();
+  //   flowbar.scrollLeft += evt.deltaY;
+  // });
+  const handleWheel = (evt) => {
+    evt.preventDefault();
+    flowbar.scrollLeft += evt.deltaY;
+  };
+
   return (
     <div className={styles.flowwrap}>
-      <motion.div className={styles.flow} style={scaleX}>
+      <motion.div
+        className={styles.flow}
+        style={scaleX || scaleY}
+        ref={flowRef}
+        onWheel={handleWheel}
+      >
+        <div className={styles.space}></div>
         <Image
           className={styles.web}
           src="/bloop.svg"
