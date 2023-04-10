@@ -79,6 +79,15 @@ export default function Flow() {
           src="/INSTW.png"
           width={287}
           height={511}
+          alt="THE ROLLING STONES INSPIRED POSTER - SAMVARCIA"
+        />
+        <Image src="/BN.png" width={500} height={500} alt="BONNE NUIT" />
+        <Image
+          className={styles.video}
+          src="/thinkmore.gif"
+          width={773}
+          height={527}
+          alt="AELIZA INSPIRED VIDEO - SAMVARCIA"
         />
       </motion.div>
     </div>
