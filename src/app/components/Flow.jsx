@@ -8,26 +8,31 @@ export default function Flow() {
   const flowRef = useRef();
   const { scrollXProgress } = useScroll();
   const scaleX = useSpring(scrollXProgress, {
-    stiffness: 10,
+    stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
   const { scrollYProgress } = useScroll();
   const scaleY = useSpring(scrollYProgress, {
-    stiffness: 10,
+    stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
-
-  const flowbar = flowRef.current;
 
   // flowbar.addEventListener("wheel", (evt) => {
   //   evt.preventDefault();
   //   flowbar.scrollLeft += evt.deltaY;
   // });
   const handleWheel = (evt) => {
-    evt.preventDefault();
-    flowbar.scrollLeft += evt.deltaY;
+    // evt.preventDefault();
+    // flowbar.scrollLeft += evt.deltaY;
+    const flowbar = flowRef.current;
+    // console.log((flowbar.scrollLeft += evt.deltaY));
+    if (flowbar) {
+      flowbar.scrollLeft += evt.deltaY;
+    }
+    // console.log(flowbar.scrollLeft);
+    // return ();
   };
 
   return (
@@ -60,6 +65,18 @@ export default function Flow() {
         <Image
           className={styles.vertical}
           src="/icarus.svg"
+          width={287}
+          height={511}
+        />
+        <Image
+          className={styles.web}
+          src="/lightlamp.gif"
+          width={773}
+          height={527}
+        />
+        <Image
+          className={styles.poster}
+          src="/INSTW.png"
           width={287}
           height={511}
         />
