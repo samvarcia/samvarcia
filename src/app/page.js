@@ -8,15 +8,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      <main className={styles.main}>
+    <main className={styles.main}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <Flow />
         <Menu />
-      </main>
-    </motion.div>
+      </motion.div>
+    </main>
   );
 }
