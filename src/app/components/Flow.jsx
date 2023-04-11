@@ -49,30 +49,35 @@ export default function Flow() {
           src="/bloop.png"
           width={773}
           height={527}
+          priority
         />
         <Image
           className={styles.vertical}
           src="/AEXUI.png"
           width={287}
           height={511}
+          priority
         />
         <Image
           className={styles.web}
           src="/saikoro.png"
           width={773}
           height={527}
+          priority
         />
         <Image
           className={styles.vertical}
           src="/icarus.svg"
           width={287}
           height={511}
+          priority
         />
         <Image
           className={styles.web}
           src="/lightlamp.gif"
           width={773}
           height={527}
+          priority
         />
         <Image
           className={styles.poster}
@@ -80,6 +85,7 @@ export default function Flow() {
           width={287}
           height={511}
           alt="THE ROLLING STONES INSPIRED POSTER - SAMVARCIA"
+          priority
         />
         <Image src="/BN.png" width={500} height={500} alt="BONNE NUIT" />
         <Image
@@ -88,6 +94,7 @@ export default function Flow() {
           width={773}
           height={527}
           alt="AELIZA INSPIRED VIDEO - SAMVARCIA"
+          priority
         />
       </motion.div>
     </div>
