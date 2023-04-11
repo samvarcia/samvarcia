@@ -46,7 +46,7 @@ export default function Flow() {
         <div className={styles.space}></div>
         <Image
           className={styles.web}
-          src="/bloop.svg"
+          src="/bloop.png"
           width={773}
           height={527}
         />
@@ -58,7 +58,7 @@ export default function Flow() {
         />
         <Image
           className={styles.web}
-          src="/saikoro.svg"
+          src="/saikoro.png"
           width={773}
           height={527}
         />

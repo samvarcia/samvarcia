@@ -5,3 +5,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.aboutContainer {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContent {
+  /* border: 1px solid blue; */
+  width: 55%;
+  color: #F2F0EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutContent h1 {
+  font-size: 30px;
+  /* line-height: 43px; */
+
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 30px;
+}

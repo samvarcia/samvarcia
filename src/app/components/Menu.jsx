@@ -6,13 +6,15 @@ export default function Menu() {
   return (
     <div className={styles.menuwrap}>
       <div className={styles.menu}>
-        <Image
-          src="/SAMVASIGN.svg"
-          alt="samvarcia"
-          width={250}
-          height={62.58}
-          priority
-        />
+        <Link href={"/"}>
+          <Image
+            src="/SAMVASIGN.svg"
+            alt="samvarcia"
+            width={250}
+            height={62.58}
+            priority
+          />
+        </Link>
         <Link href={"/about"}>
           <h1>ABOUT</h1>
         </Link>
