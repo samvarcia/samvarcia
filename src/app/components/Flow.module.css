@@ -54,3 +54,18 @@
   height: 450px;
   width: auto;
 }
+
+@media (max-width: 1023px) {
+  .space {
+    margin-right: 0px;
+  }
+
+  .web {
+    width: 90vw;
+    height: auto;
+  }
+
+  .flow img {
+    margin: 0px 20px;
+  }
+}
