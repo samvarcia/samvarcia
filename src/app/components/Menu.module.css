@@ -13,3 +13,25 @@
   justify-content: space-between;
   width: 500px;
 }
+
+@media (max-width: 1023px) {
+  .menuwrap {
+    bottom: 20px;
+  }
+
+  .menu {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .menu h1 {
+    font-size: 26px;
+
+  }
+
+  .menu img {
+    width: 80%;
+    height: auto;
+  }
+}
