@@ -93,6 +93,7 @@ export default function Flow() {
           height={500}
           alt="BONNE NUIT"
           className={styles.square}
+          priority
         />
         <Image
           className={styles.video}
