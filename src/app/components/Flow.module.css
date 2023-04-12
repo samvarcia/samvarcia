@@ -60,7 +60,10 @@
     margin-right: 0px;
   }
 
-  .web {
+  .web,
+  .poster,
+  .video,
+  .square {
     width: 90vw;
     height: auto;
   }

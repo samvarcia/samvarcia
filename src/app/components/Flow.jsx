@@ -87,7 +87,13 @@ export default function Flow() {
           alt="THE ROLLING STONES INSPIRED POSTER - SAMVARCIA"
           priority
         />
-        <Image src="/BN.png" width={500} height={500} alt="BONNE NUIT" />
+        <Image
+          src="/BN.png"
+          width={500}
+          height={500}
+          alt="BONNE NUIT"
+          className={styles.square}
+        />
         <Image
           className={styles.video}
           src="/thinkmore.gif"
