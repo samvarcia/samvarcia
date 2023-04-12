@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 export const metadata = {
   title: "SAMVARCIA",
   description: "SAMVARCIA - Samuel Garcia Portfolio",
+  themeColor: "#F2F0EC",
 };
 
 const helvetica = localFont({
