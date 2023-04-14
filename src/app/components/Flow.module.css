@@ -1,23 +1,31 @@
 .flowwrap {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 100%;
 }
 
-.flow {
-  /* border: 1px solid red; */
+.drag {
+  width: 100%;
+  border: 1px solid blue;
   margin-bottom: 100px;
   display: flex;
   align-items: center;
   flex-direction: row;
-  overflow: auto;
+  overflow-x: auto;
   flex-shrink: 0;
   /* overflow: visible; */
 }
 
-.flow::-webkit-scrollbar {
+.drag div {
+  display: flex;
+}
+
+
+
+.drag::-webkit-scrollbar {
   display: none;
 }
 
