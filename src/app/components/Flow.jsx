@@ -24,84 +24,82 @@ export default function Flow() {
     if (flowbar) {
       flowbar.scrollLeft += evt.deltaY;
     }
+    // console.log("WHEEL");
   };
 
   return (
     <div className={styles.flowwrap}>
-      <motion.div className={styles.drag} ref={constraintsRef}>
-        <motion.div
-          // className={styles.flow}
-          // style={scaleX && scaleY}
-          ref={flowRef}
-          onWheel={handleWheel}
-          drag="x"
-          dragConstraints={constraintsRef}
-          // dragConstraints={{ left: -100000, right: 0 }}
-          // dragConstraints={{ left: 0, right: "200vw" }}
-          // onMeasureDragConstraints={console.log}
-          // dragSnapToOrigin={0}
-        >
-          <div className={styles.space}></div>
-          <Image
-            className={styles.web}
-            src="/bloop.png"
-            width={773}
-            height={527}
-            priority
-          />
-          <Image
-            className={styles.vertical}
-            src="/AEXUI.png"
-            width={287}
-            height={511}
-            priority
-          />
-          <Image
-            className={styles.web}
-            src="/saikoro.png"
-            width={773}
-            height={527}
-            priority
-          />
-          <Image
-            className={styles.vertical}
-            src="/icarus.svg"
-            width={287}
-            height={511}
-            priority
-          />
-          <Image
-            className={styles.web}
-            src="/lightlamp.gif"
-            width={773}
-            height={527}
-            priority
-          />
-          <Image
-            className={styles.poster}
-            src="/INSTW.png"
-            width={287}
-            height={511}
-            alt="THE ROLLING STONES INSPIRED POSTER - SAMVARCIA"
-            priority
-          />
-          <Image
-            src="/BN.png"
-            width={500}
-            height={500}
-            alt="BONNE NUIT"
-            className={styles.square}
-            priority
-          />
-          <Image
-            className={styles.video}
-            src="/thinkmore.gif"
-            width={773}
-            height={527}
-            alt="AELIZA INSPIRED VIDEO - SAMVARCIA"
-            priority
-          />
-        </motion.div>
+      <motion.div
+        className={styles.flow}
+        style={scaleX || scaleY}
+        ref={flowRef}
+        onWheel={handleWheel}
+
+        // dragConstraints={{ left: -100000, right: 0 }}
+        // dragConstraints={{ left: 0, right: "200vw" }}
+        // onMeasureDragConstraints={console.log}
+        // dragSnapToOrigin={0}
+      >
+        <div className={styles.space}></div>
+        <Image
+          className={styles.web}
+          src="/bloop.png"
+          width={773}
+          height={527}
+          priority
+        />
+        <Image
+          className={styles.vertical}
+          src="/AEXUI.png"
+          width={287}
+          height={511}
+          priority
+        />
+        <Image
+          className={styles.web}
+          src="/saikoro.png"
+          width={773}
+          height={527}
+          priority
+        />
+        <Image
+          className={styles.vertical}
+          src="/icarus.svg"
+          width={287}
+          height={511}
+          priority
+        />
+        <Image
+          className={styles.web}
+          src="/lightlamp.gif"
+          width={773}
+          height={527}
+          priority
+        />
+        <Image
+          className={styles.poster}
+          src="/INSTW.png"
+          width={287}
+          height={511}
+          alt="THE ROLLING STONES INSPIRED POSTER - SAMVARCIA"
+          priority
+        />
+        <Image
+          src="/BN.png"
+          width={500}
+          height={500}
+          alt="BONNE NUIT"
+          className={styles.square}
+          priority
+        />
+        <Image
+          className={styles.video}
+          src="/thinkmore.gif"
+          width={773}
+          height={527}
+          alt="AELIZA INSPIRED VIDEO - SAMVARCIA"
+          priority
+        />
       </motion.div>
     </div>
   );
