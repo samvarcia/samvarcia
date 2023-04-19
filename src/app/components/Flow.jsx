@@ -2,6 +2,7 @@ import styles from "./Flow.module.css";
 import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function Flow() {
   const flowRef = useRef();
@@ -41,13 +42,15 @@ export default function Flow() {
         // dragSnapToOrigin={0}
       >
         <div className={styles.space}></div>
-        <Image
-          className={styles.web}
-          src="/bloop.png"
-          width={773}
-          height={527}
-          priority
-        />
+        <Link href={"/bloop"}>
+          <Image
+            className={styles.web}
+            src="/bloop.png"
+            width={773}
+            height={527}
+            priority
+          />
+        </Link>
         <Image
           className={styles.vertical}
           src="/AEXUI.png"

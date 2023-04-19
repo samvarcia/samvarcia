@@ -1,0 +1,22 @@
+.bloop {
+  color: #000;
+}
+
+.bloopCopy {
+  text-align: center;
+}
+
+.bloopCopy h2 {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.gallery img {
+  max-width: 500px;
+}
