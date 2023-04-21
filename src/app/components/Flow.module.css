@@ -1,4 +1,19 @@
-.flowwrap {
+.imageContainer {
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.imageContainer img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* .flowwrap {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +29,6 @@
   flex-direction: row;
   overflow-x: auto;
   flex-shrink: 0;
-  /* overflow: visible; */
 }
 
 .drag div {
@@ -28,21 +42,17 @@
 
 .flow img {
   margin: 0px 50px;
-  /* SHADOW */
-  /* 
-  filter: drop-shadow(0px 29px 33px rgba(0, 0, 0, 0.392209)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.113564));
-  backdrop-filter: blur(36.6968px); */
+  
 }
 
 .web {
   width: auto;
   height: 450px;
-  /* border-radius: 9px; */
 }
 
 .vertical {
   border-radius: 20px;
-  height: 400px;
+  height: 450px;
   width: auto;
 }
 
@@ -51,11 +61,16 @@
 }
 
 .poster {
-  height: 70vh;
+  height: 450px;
   width: auto;
 }
 
 .video {
+  height: 450px;
+  width: auto;
+}
+
+.square {
   height: 450px;
   width: auto;
 }
@@ -76,4 +91,4 @@
   .flow img {
     margin: 0px 20px;
   }
-}
+} */

@@ -17,8 +17,8 @@ export default function Page() {
   }, []);
   const images = [
     {
-      src: "/bloop.gif",
-      alt: "Bloop website - SAMVARCIA",
+      src: "/AEXUI.png",
+      alt: "AEX UI - SAMVARCIA",
       show: false,
     },
     {
@@ -63,7 +63,7 @@ export default function Page() {
         )}
         <div className={styles.bloopCopy}>
           <div>
-            <h1>Bloop</h1>
+            <h1>AEX</h1>
             <p>Web Design, Branding, Research</p>
           </div>
           {/* <p className={styles.projectText}>

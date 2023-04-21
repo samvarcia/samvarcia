@@ -12,6 +12,11 @@ const helvetica = localFont({
     {
       path: "./font/HelveticaNowText-Bold.ttf",
       weight: "700",
+      style: "bold",
+    },
+    {
+      path: "./font/HelveticaNowText-Regular.ttf",
+      weight: "400",
       style: "normal",
     },
   ],
