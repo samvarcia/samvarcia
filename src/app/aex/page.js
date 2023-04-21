@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./bloop.module.css";
+// import styles from "./bloop.module.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
