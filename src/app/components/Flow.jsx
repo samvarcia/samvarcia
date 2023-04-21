@@ -6,20 +6,30 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Link from "next/link";
 
 export default function Flow() {
-  const [scrollTop, setScrollTop] = useState(0);
+  const containerRef = useRef(null);
 
   useEffect(() => {
+    const containerHeight = containerRef.current.offsetHeight;
+    const scrollHeight = containerRef.current.scrollHeight;
+
+    let currentScrollTop = 0;
+
     const intervalId = setInterval(() => {
-      setScrollTop((prevScrollTop) => prevScrollTop + 1);
-    }, 1);
+      currentScrollTop += 1;
+
+      if (currentScrollTop > scrollHeight - containerHeight) {
+        currentScrollTop = 0;
+      }
+
+      containerRef.current.scrollTop = currentScrollTop;
+    }, 10);
 
     return () => clearInterval(intervalId);
   }, []);
-
   const imageUrls = [
-    "/bloop.png",
+    "/bloop2.png",
     "/AEXUI.png",
-    "/saikoro.png",
+    "/saikoro2.png",
     "/icarus.svg",
     "/lightlamp.gif",
     "/INSTW.png",
@@ -52,10 +62,11 @@ export default function Flow() {
 
   return (
     <div
+      ref={containerRef}
       className={styles.imageList}
-      style={{
-        transform: `translateY(-${scrollTop}px)`,
-      }}
+      // style={{
+      //   transform: `translateY(-${scrollTop}px)`,
+      // }}
     >
       {imageUrls.map((imageUrl, index) => (
         <div key={index} className={styles.imageContainer}>

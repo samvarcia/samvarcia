@@ -74,21 +74,16 @@
   height: 450px;
   width: auto;
 }
-
+*/
 @media (max-width: 1023px) {
-  .space {
-    margin-right: 0px;
+  .imageContainer img {
+    width: 90%;
+    /* height: auto; */
   }
 
-  .web,
-  .poster,
-  .video,
-  .square {
-    width: 90vw;
-    height: auto;
-  }
+  .imageContainer {
+    height: 90vh;
+    margin-bottom: 0px;
 
-  .flow img {
-    margin: 0px 20px;
   }
-} */
+}
