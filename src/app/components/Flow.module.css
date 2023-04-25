@@ -1,17 +1,43 @@
-.ticker {
+.pieces {
+  /* border: 5px solid red; */
+  height: 85vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes ticker-kf {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
+.flow {
+  /* border: 5px solid red; */
 }
 
-.ticker {
-  animation: ticker-kf 18s linear infinite;
+.flow img {
+  margin: 0px 50px;
+}
+
+.web {
+  width: auto;
+  height: 450px;
+}
+
+.vertical {
+  border-radius: 20px;
+  height: 450px;
+  width: auto;
+}
+
+
+.poster {
+  height: 450px;
+  width: auto;
+}
+
+.think {
+  height: 450px;
+  width: auto;
+}
+
+.bn {
+  height: 450px;
+  width: auto;
 }

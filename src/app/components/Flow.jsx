@@ -1,80 +1,44 @@
 import { useState, useEffect } from "react";
+import Ticker from "framer-motion-ticker";
+import Image from "next/image";
 import styles from "./Flow.module.css";
 const images = [
-  "/bloop.png",
-  "/saikoro.png",
-  "/BN.png",
-  "/AEXUI.png",
-  "/lightlamp.gif",
-  "/icarus.svg",
-  "/thinkmore.gif",
+  { path: "/bloop.png", class: "web" },
+  { path: "/BN.png", class: "bn" },
+  { path: "/saikoro.png", class: "web" },
+  { path: "/AEXUI.png", class: "vertical" },
+  { path: "/lightlamp.gif", class: "think" },
+  { path: "/INSTW.png", class: "poster" },
+  { path: "/icarus.svg", class: "vertical" },
+  { path: "/thinkmore.gif", class: "think" },
 ];
+const Flow = () => {
+  const [currentImage, setCurrentImage] = useState(0);
 
-export default function Flow() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    // <div className={styles.flow}>
-    //   <div className={styles.flowInner}>
-    //     <img src="/bloop.png" />
-    //     <img src="/saikoro.png" />
-    //     <img src="/BN.png" />
-    //     <img src="/AEXUI.png" />
-    //     <img src="/lightlamp.gif" />
-    //     <img src="/icarus.svg" />
-    //     <img src="/thinkmore.gif" />
-    //   </div>
-    // </div>
-    <div className={styles.flow}>
-      <div className={styles.ticker}>
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=1"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=2"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=3"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=4"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=5"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=6"
-        />
-
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=1"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=2"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=3"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=4"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x341/f4ccccff/434343?text=5"
-        />
-        <img
-          class="w-64 mx-4 self-start flex-none"
-          src="https://via.placeholder.com/256x192/f4ccccff/434343?text=6"
-        />
+    <div className={styles.pieces}>
+      <div className={styles.flow}>
+        <Ticker duration={30}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.path}
+              alt={`Image ${index + 1}`}
+              className={styles[image.class]}
+            />
+          ))}
+        </Ticker>
       </div>
     </div>
   );
-}
+};
+
+export default Flow;
