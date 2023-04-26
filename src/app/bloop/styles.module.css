@@ -1,4 +1,4 @@
-.bloop {
+.project {
   color: #000;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-.bloopCopy {
+.projectCopy {
   text-align: center;
   /* margin-top: 10px; */
 
@@ -17,11 +17,11 @@
   width: 50%;
 }
 
-.bloopCopy h1 {
+.projectCopy h1 {
   font-size: 38px;
 }
 
-.bloopCopy p {
+.projectCopy p {
   margin-top: 10px;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.54);
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 1023px) {
-  .bloop {
+  .project {
     /* height: 90vh; */
     align-items: center;
     justify-content: center;
@@ -63,11 +63,11 @@
     height: 50vh;
   }
 
-  .bloopCopy h1 {
+  .projectCopy h1 {
     font-size: 24px;
   }
 
-  .bloopCopy p {
+  .projectCopy p {
     font-size: 18px;
   }
 }

@@ -17,28 +17,8 @@ export default function Page() {
   }, []);
   const images = [
     {
-      src: "/bloop.gif",
-      alt: "Bloop website - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/blooplogo.png",
-      alt: "Bloop logo - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/bloopconcept.png",
-      alt: "Bloop Concept - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/bloopbrand.png",
-      alt: "Bloop Brand - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/bloopcard.png",
-      alt: "Bloop Card - SAMVARCIA",
+      src: "/BN.png",
+      alt: "Bonne Nuit - SAMVARCIA",
       show: false,
     },
 
@@ -63,8 +43,8 @@ export default function Page() {
         )}
         <div className={styles.projectCopy}>
           <div>
-            <h1>Bloop</h1>
-            <p>Web Design, Branding, Research</p>
+            <h1>Bonne Nuit Inspired Graphic</h1>
+            <p>Graphic Design</p>
           </div>
           {/* <p className={styles.projectText}>
           In 2022, I collaborated with Bloop (Techstars 22) designing the

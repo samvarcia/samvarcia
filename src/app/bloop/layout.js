@@ -1,4 +1,4 @@
-import styles from "./bloop.module.css";
+import styles from "./styles.module.css";
 import Menu from "../components/Menu";
 import localFont from "next/dist/compiled/@next/font/dist/local";
 

@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import Ticker from "framer-motion-ticker";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Flow.module.css";
+import { motion } from "framer-motion";
 const images = [
-  { path: "/bloop.png", class: "web" },
-  { path: "/BN.png", class: "bn" },
-  { path: "/saikoro.png", class: "web" },
-  { path: "/AEXUI.png", class: "vertical" },
-  { path: "/greenlamp.gif", class: "think" },
-  { path: "/INSTW.png", class: "poster" },
-  { path: "/icarus.svg", class: "vertical" },
-  { path: "/thinkmore.gif", class: "think" },
+  { path: "/bloop.png", class: "web", route: "/bloop" },
+  { path: "/BN.png", class: "bn", route: "/bn" },
+  { path: "/saikoro.png", class: "web", route: "/saikoro" },
+  { path: "/AEXUI.png", class: "vertical", route: "/aex" },
+  { path: "/greenlamp.gif", class: "think", route: "/glow" },
+  { path: "/INSTW.png", class: "poster", route: "/instw" },
+  { path: "/icarus.svg", class: "vertical", route: "/icarus" },
+  { path: "/thinkmore.gif", class: "think", route: "/thinkmore" },
 ];
 const Flow = () => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -25,12 +27,14 @@ const Flow = () => {
           isPlaying={isPlaying}
         >
           {images.map((image, index) => (
-            <img
-              key={index}
-              src={image.path}
-              alt={`Image ${index + 1}`}
-              className={styles[image.class]}
-            />
+            <Link href={image.route}>
+              <img
+                key={index}
+                src={image.path}
+                alt={`Image ${index + 1}`}
+                className={styles[image.class]}
+              />
+            </Link>
           ))}
         </Ticker>
       </div>
