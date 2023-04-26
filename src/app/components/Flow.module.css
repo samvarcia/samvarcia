@@ -23,7 +23,6 @@
 
 }
 
-
 .poster {
   height: 450px;
   width: auto;
@@ -37,4 +36,13 @@
 .bn {
   height: 450px;
   width: auto;
+}
+
+@media (max-width: 1023px) {
+
+  .flow img {
+    margin: 0 25px;
+    width: auto;
+    height: 300px;
+  }
 }
