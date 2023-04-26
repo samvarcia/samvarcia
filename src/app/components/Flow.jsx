@@ -7,7 +7,7 @@ const images = [
   { path: "/BN.png", class: "bn" },
   { path: "/saikoro.png", class: "web" },
   { path: "/AEXUI.png", class: "vertical" },
-  { path: "/lightlamp.gif", class: "think" },
+  { path: "/greenlamp.gif", class: "think" },
   { path: "/INSTW.png", class: "poster" },
   { path: "/icarus.svg", class: "vertical" },
   { path: "/thinkmore.gif", class: "think" },
