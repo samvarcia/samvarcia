@@ -13,20 +13,17 @@ const images = [
   { path: "/thinkmore.gif", class: "think" },
 ];
 const Flow = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   return (
     <div className={styles.pieces}>
       <div className={styles.flow}>
-        <Ticker duration={30}>
+        <Ticker
+          duration={30}
+          onMouseEnter={() => setIsPlaying(false)}
+          onMouseLeave={() => setIsPlaying(true)}
+          isPlaying={isPlaying}
+        >
           {images.map((image, index) => (
             <img
               key={index}
