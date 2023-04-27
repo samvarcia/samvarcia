@@ -36,7 +36,14 @@ export default function Page() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <img src={image.src} alt={image.alt} />
+            <Image
+              className={styles.projectimg}
+              priority
+              width={500}
+              height={500}
+              src={image.src}
+              alt={image.alt}
+            />{" "}
           </motion.div>
         ) : null
       )}

@@ -40,7 +40,7 @@
   margin-top: 20px;
 }
 
-.gallery img {
+.projectimg {
   height: auto;
   width: 100%;
   /* max-width: 400px; */
@@ -59,7 +59,7 @@
     justify-content: center;
   }
 
-  .gallery img {
+  .projectimg {
     width: 100%;
   }
 
