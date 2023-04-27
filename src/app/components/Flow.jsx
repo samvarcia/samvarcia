@@ -21,7 +21,7 @@ const Flow = () => {
     <div className={styles.pieces}>
       <div className={styles.flow}>
         <Ticker
-          duration={30}
+          duration={22}
           onMouseEnter={() => setIsPlaying(false)}
           onMouseLeave={() => setIsPlaying(true)}
           isPlaying={isPlaying}
