@@ -11,7 +11,7 @@
 
 .projectCopy {
   text-align: center;
-  /* margin-top: 10px; */
+  margin-top: 10px;
 
   /* border: 1px solid red; */
   width: 50%;
@@ -55,18 +55,26 @@
   }
 
   .gallery img {
-    width: 80%;
+    width: 100%;
   }
 
   .gallery {
     height: 50vh;
   }
 
+  .projectCopy {
+    width: 100%;
+  }
+
   .projectCopy h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .projectCopy p {
+    font-size: 20px;
+  }
+
+  .projectCopy a {
     font-size: 18px;
   }
 }

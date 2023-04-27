@@ -56,18 +56,22 @@
   }
 
   .gallery img {
-    width: 80%;
+    width: 100%;
   }
 
   .gallery {
     height: 50vh;
   }
 
+  .projectCopy {
+    width: 100%;
+  }
+
   .projectCopy h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .projectCopy p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
