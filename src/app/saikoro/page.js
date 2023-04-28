@@ -49,7 +49,7 @@ export default function Page() {
       )}
       <div className={styles.projectCopy}>
         <div>
-          <h1>Sa!koro Website</h1>
+          <h1>Sa!koro Website - 2023</h1>
           <p>Web Design, Creative Direction</p>
           <a href="https://www.saikorito.com/" target="_blank">
             saikorito.com

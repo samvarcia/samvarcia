@@ -12,7 +12,7 @@ export default function Page() {
       setCurrentImageIndex((currentIndex) =>
         currentIndex === images.length - 1 ? 0 : currentIndex + 1
       );
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
   const images = [
@@ -89,7 +89,7 @@ export default function Page() {
       )}
       <div className={styles.projectCopy}>
         <div>
-          <h1>GLOW</h1>
+          <h1>GLOW - 2022</h1>
           <p>3D Modeling, Creative Direction, Brand</p>
         </div>
       </div>

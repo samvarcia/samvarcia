@@ -49,7 +49,7 @@ export default function Page() {
       )}
       <div className={styles.projectCopy}>
         <div>
-          <h1>Bonne Nuit Inspired Graphic</h1>
+          <h1>Bonne Nuit Inspired Graphic - 2022</h1>
           <p>Graphic Design</p>
         </div>
         {/* <p className={styles.projectText}>

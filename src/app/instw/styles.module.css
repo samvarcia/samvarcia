@@ -21,15 +21,10 @@
   font-size: 38px;
 }
 
-.projectCopy p,
-.projectCopy a {
+.projectCopy p {
+  margin-top: 10px;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.54);
-}
-
-.projectCopy a {
-  font-size: 22px;
-  margin-top: 5px;
 }
 
 .gallery {
@@ -42,8 +37,8 @@
 }
 
 .projectimg {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 80%;
   /* max-width: 400px; */
   border-radius: 9px;
 }
@@ -53,16 +48,16 @@
   /* max-width: 800px; */
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .project {
-    /* height: 90vh; */
+    height: 90vh;
     align-items: center;
     justify-content: center;
   }
 
   .projectimg {
+    height: 100%;
     width: auto;
-    height: 80%;
   }
 
   .gallery {
@@ -79,9 +74,5 @@
 
   .projectCopy p {
     font-size: 20px;
-  }
-
-  .projectCopy a {
-    font-size: 18px;
   }
 }

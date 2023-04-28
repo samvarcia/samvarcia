@@ -17,51 +17,10 @@ export default function Page() {
   }, []);
   const images = [
     {
-      src: "/aex.gif",
-      alt: "AEX - SAMVARCIA",
+      src: "/INSTW.png",
+      alt: "THE ROLLING STONES POSTER - SAMVARCIA",
       show: false,
     },
-    {
-      src: "/AEXUI.png",
-      alt: "AEX - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/AEXBRAND.png",
-      alt: "AEX BRAND - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/AEXPIXELTHEMOMENT.png",
-      alt: "AEX ADS - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/aex1.png",
-      alt: "AEX PHOTO - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/aex2.png",
-      alt: "AEX PHOTO - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/aex3.png",
-      alt: "AEX PHOT - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/aex4.png",
-      alt: "AEX PHOTO - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/aex5.png",
-      alt: "AEX PHOTO - SAMVARCIA",
-      show: false,
-    },
-
     // Add more images as needed
   ];
 
@@ -89,11 +48,8 @@ export default function Page() {
       )}
       <div className={styles.projectCopy}>
         <div>
-          <h1>ÆX - 2023</h1>
-          <p>Web Design, Creative Direction, Brand</p>
-          <a href="https://www.saikorito.com/" target="_blank">
-            ÆX WEBSITE
-          </a>
+          <h1>THE ROLLING STONES POSTER - 2023</h1>
+          <p>Graphic Design, Creative Direction, Layout Design</p>
         </div>
       </div>
     </section>
