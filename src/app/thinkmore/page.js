@@ -17,8 +17,8 @@ export default function Page() {
   }, []);
   const images = [
     {
-      src: "/BN.png",
-      alt: "Bonne Nuit - SAMVARCIA",
+      src: "/thinkmore.gif",
+      alt: "Think More - SAMVARCIA",
       show: false,
     },
 
@@ -49,8 +49,8 @@ export default function Page() {
       )}
       <div className={styles.projectCopy}>
         <div>
-          <h1>Bonne Nuit Inspired Graphic - 2022</h1>
-          <p>Graphic Design</p>
+          <h1>VIDEO SAMPLES INSPIRED BY AELIZA - 2022</h1>
+          <p>Video Creation</p>
         </div>
       </div>
     </section>
