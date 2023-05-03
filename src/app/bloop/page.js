@@ -47,6 +47,45 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>Bloop</h1>
+            </div>
+            <p>Web Design, Branding, Research</p>
+            <p>2022</p>
+          </div>
+          <p className={styles.projectCopyDescription}>
+            In the creation of Bloop's website and brand, I drew inspiration
+            from space, connectivity, and motion. This reflects the product's
+            core value of fostering a community-driven search experience, where
+            users can share curated lists of websites, transforming browsing
+            into a social experience. Participated in User Research sessions and
+            attented Techstars 22’ lectures.
+          </p>
+          <div className={styles.projectTypeTools}>
+            <p>Collaboration</p>
+            <div className={styles.tools}>
+              <Image
+                src={"/figma.svg"}
+                width={40}
+                height={40}
+                alt="figma"
+                style={{ marginRight: "20px" }}
+              />
+              <Image
+                src={"/photoshop.svg"}
+                width={40}
+                height={40}
+                alt="photoshop"
+                style={{ marginRight: "20px" }}
+              />
+              <Image src={"/react.svg"} width={40} height={40} alt="react" />
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -54,6 +93,7 @@ export default function Page() {
             className={styles.gallery}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
             exit={{ opacity: 0 }}
           >
             <Image
@@ -67,19 +107,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>Bloop</h1>
-          <p>Web Design, Branding, Research</p>
-        </div>
-        {/* <p className={styles.projectText}>
-          In 2022, I collaborated with Bloop (Techstars 22) designing the
-          landing page and brand of the startup, I was inspired by the sense of
-          connection and community of the product and team values. I had the
-          opportunity to attend several lectures hosted by Techstars and conduct
-          user research sessions.
-        </p> */}
-      </div>
     </section>
   );
 }

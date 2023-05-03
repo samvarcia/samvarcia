@@ -30,15 +30,18 @@ const Flow = () => {
   const currentImage = images[currentImageIndex];
   return (
     <div className={styles.projects}>
-      <motion.img
-        key={currentImageIndex}
-        src={images[currentImageIndex].src}
-        alt="Fading image"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className={styles[currentImage.class]}
-      />
+      <Link href={currentImage.route}>
+        <motion.img
+          key={currentImageIndex}
+          src={images[currentImageIndex].src}
+          alt="Fading image"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          exit={{ opacity: 0 }}
+          className={styles[currentImage.class]}
+        />
+      </Link>
     </div>
   );
 };
