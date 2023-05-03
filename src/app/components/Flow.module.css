@@ -1,20 +1,15 @@
-.pieces {
-  height: 85vh;
+.projects {
+  /* border: 1px solid red; */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
-
-.flow img {
-  margin: 0px 50px;
-}
-
-
 
 .web {
   width: auto;
   height: 450px;
+  border-radius: 9px;
 }
 
 .vertical {
@@ -40,10 +35,13 @@
 }
 
 @media (max-width: 1023px) {
+  .projects img {
+    height: auto;
+    width: 80%;
+  }
 
-  .flow img {
-    margin: 0 25px;
+  .vertical {
+    max-height: 90%;
     width: auto;
-    height: 300px;
   }
 }
