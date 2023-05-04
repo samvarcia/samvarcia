@@ -26,6 +26,29 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>THE ROLLING STONES POSTER</h1>
+            </div>
+            <p>Graphic Design, Creative Direction, Layout Design</p>
+            <p style={{ marginTop: "5px" }}>2023</p>
+            <div className={styles.projectTypeTools}>
+              <p>Solo</p>
+              <div className={styles.tools}>
+                <Image
+                  src={"/photoshop.svg"}
+                  width={40}
+                  height={40}
+                  alt="photoshop"
+                  style={{ marginRight: "20px" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -46,12 +69,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>THE ROLLING STONES POSTER - 2023</h1>
-          <p>Graphic Design, Creative Direction, Layout Design</p>
-        </div>
-      </div>
     </section>
   );
 }
