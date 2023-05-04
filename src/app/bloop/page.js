@@ -54,7 +54,7 @@ export default function Page() {
               <h1>Bloop</h1>
             </div>
             <p>Web Design, Branding, Research</p>
-            <p>2022</p>
+            <p style={{ marginTop: "5px" }}>2022</p>
           </div>
           <p className={styles.projectCopyDescription}>
             In the creation of Bloop's website and brand, I drew inspiration

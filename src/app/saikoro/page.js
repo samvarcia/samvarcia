@@ -27,6 +27,51 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>Sa!koro Website - 2023</h1>
+            </div>
+            <p>Web Design, Creative Direction</p>
+            <a
+              href="https://www.saikorito.com/"
+              target="_blank"
+              className={styles.projectCopyWebsite}
+            >
+              saikorito.com
+            </a>
+            <p style={{ marginTop: "5px" }}>2023</p>
+          </div>
+          <p className={styles.projectCopyDescription}>
+            Teaming up with the musical artist Sa!koro we created his first
+            website, inspired by the Y2K aesthetic, pale colors and diamond trap
+            culture. Our goal was to showcase his unique style, personality, and
+            musical journey over time.
+          </p>
+
+          <div className={styles.projectTypeTools}>
+            <p>Collaboration</p>
+            <div className={styles.tools}>
+              <Image
+                src={"/figma.svg"}
+                width={40}
+                height={40}
+                alt="Figma"
+                style={{ marginRight: "20px" }}
+              />
+              <Image
+                src={"/photoshop.svg"}
+                width={40}
+                height={40}
+                alt="Photoshop"
+                style={{ marginRight: "20px" }}
+              />
+              <Image src={"/nextjs.svg"} width={40} height={40} alt="NextJS" />
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -34,6 +79,7 @@ export default function Page() {
             className={styles.gallery}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
             exit={{ opacity: 0 }}
           >
             <Image
@@ -43,26 +89,10 @@ export default function Page() {
               height={500}
               src={image.src}
               alt={image.alt}
-            />{" "}
+            />
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>Sa!koro Website - 2023</h1>
-          <p>Web Design, Creative Direction</p>
-          <a href="https://www.saikorito.com/" target="_blank">
-            saikorito.com
-          </a>
-        </div>
-        {/* <p className={styles.projectText}>
-          In 2022, I collaborated with Bloop (Techstars 22) designing the
-          landing page and brand of the startup, I was inspired by the sense of
-          connection and community of the product and team values. I had the
-          opportunity to attend several lectures hosted by Techstars and conduct
-          user research sessions.
-        </p> */}
-      </div>
     </section>
   );
 }

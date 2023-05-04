@@ -54,7 +54,7 @@
 
 .projectimg {
   height: auto;
-  width: 70%;
+  width: 60%;
   /* max-width: 400px; */
   border-radius: 9px;
 }
@@ -86,30 +86,33 @@
 
 
 
+
 @media (max-width: 1023px) {
   .project {
-    /* height: 90vh; */
+    height: 100%;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
   }
 
   .projectimg {
-    width: 100%;
+    width: 60%;
   }
 
   .gallery {
-    height: 50vh;
+    width: 400px;
+    min-height: 300px;
+    max-height: 300px;
   }
 
   .projectCopy {
     width: 100%;
   }
 
-  .projectCopy h1 {
-    font-size: 28px;
-  }
-
-  .projectCopy p {
-    font-size: 20px;
+  .projectCopyWrap {
+    width: 100%;
   }
 }
