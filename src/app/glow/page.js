@@ -67,6 +67,42 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>Glow</h1>
+            </div>
+            <p>3D Modeling, Creative Direction, Brand</p>
+            <p style={{ marginTop: "5px" }}>2022</p>
+          </div>
+          <p className={styles.projectCopyDescription}>
+            I love beautiful things, James Turrell's work and 3D design. So, I
+            created a lamp concept that comes in four colors. I wanted to make
+            it look soft and gentle.
+          </p>
+          <div className={styles.projectTypeTools}>
+            <p>Solo</p>
+            <div className={styles.tools}>
+              <Image
+                src={"/figma.svg"}
+                width={40}
+                height={40}
+                alt="figma"
+                style={{ marginRight: "20px" }}
+              />
+              <Image
+                src={"/photoshop.svg"}
+                width={40}
+                height={40}
+                alt="photoshop"
+                style={{ marginRight: "20px" }}
+              />
+              <Image src={"/spline.png"} width={40} height={40} alt="Spline" />
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -75,6 +111,7 @@ export default function Page() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
           >
             <Image
               className={styles.projectimg}
@@ -87,12 +124,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>GLOW - 2022</h1>
-          <p>3D Modeling, Creative Direction, Brand</p>
-        </div>
-      </div>
     </section>
   );
 }

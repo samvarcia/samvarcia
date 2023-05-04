@@ -71,9 +71,10 @@ export default function Page() {
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
             <div className={styles.projectCopyTitleDate}>
-              <h1>ÆX - 2023</h1>
+              <h1>ÆX</h1>
             </div>
             <p>Web Design, Creative Direction, Brand, UX/UI Design</p>
+            <p style={{ marginTop: "5px" }}>2023</p>
             <a
               href="https://aex.vercel.app"
               target="_blank"

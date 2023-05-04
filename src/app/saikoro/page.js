@@ -31,9 +31,10 @@ export default function Page() {
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
             <div className={styles.projectCopyTitleDate}>
-              <h1>Sa!koro Website - 2023</h1>
+              <h1>Sa!koro Website</h1>
             </div>
             <p>Web Design, Creative Direction</p>
+            <p style={{ marginTop: "5px" }}>2023</p>
             <a
               href="https://www.saikorito.com/"
               target="_blank"
