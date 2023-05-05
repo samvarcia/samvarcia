@@ -22,18 +22,13 @@ export default function Page() {
       show: false,
     },
     {
-      src: "/AEXUI.png",
+      src: "/AEXWRAP.png",
       alt: "AEX - SAMVARCIA",
       show: false,
     },
     {
       src: "/AEXBRAND.png",
       alt: "AEX BRAND - SAMVARCIA",
-      show: false,
-    },
-    {
-      src: "/AEXPIXELTHEMOMENT.png",
-      alt: "AEX ADS - SAMVARCIA",
       show: false,
     },
     {
