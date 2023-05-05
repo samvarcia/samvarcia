@@ -1,6 +1,7 @@
 .projects {
   /* border: 1px solid red; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
@@ -16,7 +17,6 @@
   border-radius: 20px;
   height: 450px;
   width: auto;
-
 }
 
 .poster {
@@ -35,13 +35,21 @@
 }
 
 @media (max-width: 1023px) {
+  .projects {
+    padding: 10px;
+  }
+
+  .projects a {
+    width: auto;
+  }
+
   .projects img {
     height: auto;
-    width: 80%;
+    width: 100%;
   }
 
   .vertical {
-    max-height: 90%;
+    height: 50%;
     width: auto;
   }
 }

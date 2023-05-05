@@ -9,7 +9,7 @@ const images = [
   { src: "/bloop.gif", class: "web", route: "/bloop" },
   { src: "/BN.png", class: "bn", route: "/bn" },
   { src: "/saikoro.gif", class: "web", route: "/saikoro" },
-  { src: "/AEXUI.png", class: "vertical", route: "/aex" },
+  { src: "/AEXWRAP.png", class: "think", route: "/aex" },
   { src: "/greenlamp.gif", class: "think", route: "/glow" },
   { src: "/INSTW.png", class: "poster", route: "/instw" },
   { src: "/icarus.svg", class: "vertical", route: "/icarus" },
