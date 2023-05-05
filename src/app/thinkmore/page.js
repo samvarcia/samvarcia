@@ -27,6 +27,20 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>VIDEO SAMPLES INSPIRED BY AELIZA</h1>
+            </div>
+            <p>Video Creation</p>
+            <p style={{ marginTop: "5px" }}>2022</p>
+            <div className={styles.projectTypeTools}>
+              <p>Solo</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -47,12 +61,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>VIDEO SAMPLES INSPIRED BY AELIZA - 2022</h1>
-          <p>Video Creation</p>
-        </div>
-      </div>
     </section>
   );
 }
