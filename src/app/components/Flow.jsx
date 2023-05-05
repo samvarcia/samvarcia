@@ -23,7 +23,7 @@ const Flow = () => {
       setCurrentImageIndex((currentIndex) =>
         currentIndex === images.length - 1 ? 0 : currentIndex + 1
       );
-    }, 4000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
