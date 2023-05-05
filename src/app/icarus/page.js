@@ -62,6 +62,44 @@ export default function Page() {
 
   return (
     <section className={styles.project}>
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>ICARUS</h1>
+            </div>
+            <p>UX/UI Design, Creative Direction, Brand, 3D Modeling</p>
+            <p style={{ marginTop: "5px" }}>2022</p>
+          </div>
+          <p className={styles.projectCopyDescription}>
+            What would it be like if humans lived on the moon? How would an app
+            to send things there work? I solved these questions and proposed the
+            solution in this app design. For the branding I was inspired by
+            nasa, the moon and the earth. Also design the different drones to
+            make it possible.
+          </p>
+          <div className={styles.projectTypeTools}>
+            <p>Solo</p>
+            <div className={styles.tools}>
+              <Image
+                src={"/figma.svg"}
+                width={40}
+                height={40}
+                alt="figma"
+                style={{ marginRight: "20px" }}
+              />
+              <Image
+                src={"/photoshop.svg"}
+                width={40}
+                height={40}
+                alt="photoshop"
+                style={{ marginRight: "20px" }}
+              />
+              <Image src={"/spline.png"} width={40} height={40} alt="Spline" />
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -82,12 +120,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>ICARUS - 2022</h1>
-          <p>UX/UI Design, Creative Direction, Brand, 3D Modeling</p>
-        </div>
-      </div>
     </section>
   );
 }
