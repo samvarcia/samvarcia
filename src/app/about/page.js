@@ -8,12 +8,30 @@ export default function Page() {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.aboutContent}>
-        <h1>
-          SAMUEL GARCIA (AKA SAMVARCIA - 2004 - BOGOTÁ) <br /> <br /> OBSESSED
-          WITH CREATING. EXPERIENCE IN STARTUPS, WEB, PRODUCT, BRANDS, GRAPHICS
-          AND DESIGN IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE
-          WORLD.
-        </h1>
+        <div className={styles.aboutText}>
+          <h1>SAMUEL GARCIA (AKA SAMVARCIA - 2004 - BOGOTÁ)</h1>
+
+          <p>
+            OBSESSED WITH CREATING. EXPERIENCE IN{" "}
+            <a
+              href="https://www.semana.com/historia-de-samuel-garcia-cofundador-de-uziday/266407/"
+              target="_blank"
+              className={styles.link}
+            >
+              STARTUPS
+            </a>
+            , WEB, PRODUCT, BRANDS, GRAPHICS AND{" "}
+            <a
+              href="https://www.are.na/samuel-garcia"
+              target="_blank"
+              className={styles.link}
+            >
+              DESIGN
+            </a>{" "}
+            IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD.
+            LOVE FOR FASHION, MUSIC AND FILM
+          </p>
+        </div>
         <div className={styles.contact}>
           <a href="mailto:samvarcia@gmail.com">EMAIL</a>
           <a href="https://twitter.com/samvarcia" target="_blank">
