@@ -25,7 +25,13 @@ export default function Page() {
   ];
 
   return (
-    <section className={styles.project}>
+    <motion.section
+      className={styles.project}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={styles.projectCopy}>
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
@@ -69,6 +75,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-    </section>
+    </motion.section>
   );
 }

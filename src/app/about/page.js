@@ -7,7 +7,13 @@ import { motion } from "framer-motion";
 export default function Page() {
   return (
     <div className={styles.aboutContainer}>
-      <div className={styles.aboutContent}>
+      <motion.div
+        className={styles.aboutContent}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <div className={styles.aboutText}>
           <h1>SAMUEL GARCIA (AKA SAMVARCIA - 2004 - BOGOTÁ)</h1>
 
@@ -41,7 +47,7 @@ export default function Page() {
             INSTAGRAM
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

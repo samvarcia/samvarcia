@@ -26,7 +26,27 @@ export default function Page() {
   ];
 
   return (
-    <section className={styles.project}>
+    <motion.section
+      className={styles.project}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className={styles.projectCopy}>
+        <div className={styles.projectCopyWrap}>
+          <div className={styles.projectCopyTitle}>
+            <div className={styles.projectCopyTitleDate}>
+              <h1>Bonne Nuit Inspired Graphic</h1>
+            </div>
+            <p>Graphic Design</p>
+            <p style={{ marginTop: "5px" }}>2022</p>
+            <div className={styles.projectTypeTools}>
+              <p>Solo</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {images.map((image, index) =>
         index === currentImageIndex ? (
           <motion.div
@@ -47,12 +67,6 @@ export default function Page() {
           </motion.div>
         ) : null
       )}
-      <div className={styles.projectCopy}>
-        <div>
-          <h1>Bonne Nuit Inspired Graphic - 2022</h1>
-          <p>Graphic Design</p>
-        </div>
-      </div>
-    </section>
+    </motion.section>
   );
 }
