@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "SAMVARCIA",
@@ -24,7 +25,10 @@ const helvetica = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={helvetica.className}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
