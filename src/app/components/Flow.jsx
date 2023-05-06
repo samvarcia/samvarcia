@@ -6,14 +6,49 @@ import styles from "./Flow.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  { src: "/bloop.gif", class: "web", route: "/bloop" },
-  { src: "/BN.png", class: "bn", route: "/bn" },
-  { src: "/saikoro.gif", class: "web", route: "/saikoro" },
-  { src: "/AEXWRAP.png", class: "think", route: "/aex" },
-  { src: "/greenlamp.gif", class: "think", route: "/glow" },
-  { src: "/INSTW.png", class: "poster", route: "/instw" },
-  { src: "/icarus.svg", class: "vertical", route: "/icarus" },
-  { src: "/thinkmore.gif", class: "think", route: "/thinkmore" },
+  {
+    src: "/bloop.png",
+    class: "web",
+    route: "/bloop",
+    alt: "Bloop - Samvarcia",
+  },
+  { src: "/BN.png", class: "bn", route: "/bn", alt: "BonneNuit - Samvarcia" },
+  {
+    src: "/saikoro.png",
+    class: "web",
+    route: "/saikoro",
+    alt: "Sa!koro - Samvarcia",
+  },
+  {
+    src: "/AEXWRAP.png",
+    class: "think",
+    route: "/aex",
+    alt: "AEX - Samvarcia",
+  },
+  {
+    src: "/greenlamp.gif",
+    class: "think",
+    route: "/glow",
+    alt: "GLOW - Samvarcia",
+  },
+  {
+    src: "/INSTW.png",
+    class: "poster",
+    route: "/instw",
+    alt: "TheRollingStones - Samvarcia",
+  },
+  {
+    src: "/icarus.svg",
+    class: "vertical",
+    route: "/icarus",
+    alt: "ICARUS - Samvarcia",
+  },
+  {
+    src: "/thinkmore.gif",
+    class: "think",
+    route: "/thinkmore",
+    alt: "AELIZA - Samvarcia",
+  },
 ];
 const Flow = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,7 +69,7 @@ const Flow = () => {
         <motion.img
           key={currentImageIndex}
           src={images[currentImageIndex].src}
-          alt="Fading image"
+          alt={currentImage.alt}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
