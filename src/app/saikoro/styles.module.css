@@ -94,7 +94,7 @@
 }
 
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .project {
     height: 100%;
     padding-bottom: 90px;
@@ -106,13 +106,12 @@
   }
 
   .projectimg {
-    width: 60%;
+    width: 100%;
   }
 
   .gallery {
-    width: 400px;
-    min-height: 300px;
-    max-height: 300px;
+    width: 500px;
+    min-height: 400px;
   }
 
   .projectCopy {
@@ -120,6 +119,18 @@
   }
 
   .projectCopyWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    width: 100%;
+    min-height: 320px;
+
+  }
+
+  .projectimg {
     width: 100%;
   }
 }
