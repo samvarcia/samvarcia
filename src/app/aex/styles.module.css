@@ -106,6 +106,10 @@
     font-size: 12px;
   }
 
+  .projectCopy h1 {
+    font-size: 24px;
+  }
+
   .projectimg {
     width: 90%;
   }

@@ -16,7 +16,7 @@
 
 @media (max-width: 768px) {
   .menuwrap {
-    bottom: 10px;
+    bottom: 15px;
     background: rgba(242, 240, 236, 0.32);
     backdrop-filter: blur(1.5px);
     border-radius: 17px;
