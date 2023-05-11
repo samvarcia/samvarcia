@@ -88,6 +88,23 @@
 
 
 @media (max-width: 768px) {
+  .projectCopyTitle {
+    align-items: center;
+  }
+
+  .projectCopyTitleDate {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .projectTypeTools {
+    width: 30%;
+  }
+
+  .projectCopy h1 {
+    font-size: 24px;
+  }
+
   .project {
     height: 100%;
     padding-bottom: 90px;
@@ -115,5 +132,15 @@
 
   .projectCopyWrap {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectCopyTitle {
+    align-items: flex-start;
+  }
+
+  .projectTypeTools {
+    width: 50%;
   }
 }
