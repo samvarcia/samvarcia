@@ -43,6 +43,15 @@ export default function Page() {
             <p style={{ marginTop: "5px" }}>2022</p>
             <div className={styles.projectTypeTools}>
               <p>Solo</p>
+              <div className={styles.tools}>
+                <Image
+                  src={"/photoshop.svg"}
+                  width={40}
+                  height={40}
+                  alt="photoshop"
+                  style={{ marginRight: "20px" }}
+                />
+              </div>
             </div>
           </div>
         </div>
