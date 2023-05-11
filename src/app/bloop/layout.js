@@ -1,19 +1,17 @@
 import styles from "./styles.module.css";
 import Menu from "../components/Menu";
-import localFont from "next/dist/compiled/@next/font/dist/local";
+import Header from "../components/Header";
 
-// export const metadata = {
-//   title: "SAMVARCIA",
-//   description: "SAMVARCIA - Samuel Garcia Portfolio",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body className={styles.about}>{children}</body>
-//     </html>
-//   );
-// }
+const pages = [
+  { path: "/bloop" },
+  { path: "/bn" },
+  { path: "/saikoro" },
+  { path: "/aex" },
+  { path: "/glow" },
+  { path: "/instw" },
+  { path: "/icarus" },
+  { path: "/thinkmore" },
+];
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -21,6 +19,7 @@ export default function DashboardLayout({
   return (
     <div>
       <section className={styles.about}>
+        <Header pages={pages} />
         {children}
         <Menu />
       </section>
