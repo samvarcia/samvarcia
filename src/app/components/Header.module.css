@@ -6,6 +6,10 @@
   padding: 20px 20px 0px 20px;
 }
 
-.Header p {
+.Header button {
+  background: none;
+  color: #F52508;
   cursor: pointer;
+  border: none;
+  font-size: 16px;
 }

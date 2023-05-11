@@ -30,8 +30,12 @@ const Header = ({ pages }) => {
 
   return (
     <div className={styles.Header}>
-      <p onClick={handlePrevious}>Previous</p>
-      <p onClick={handleNext}>Next</p>
+      <button onClick={handlePrevious}>
+        <p>Previous</p>
+      </button>
+      <button onClick={handleNext}>
+        <p>Next</p>
+      </button>
     </div>
   );
 };
