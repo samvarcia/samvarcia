@@ -1,0 +1,11 @@
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.Header p {
+  cursor: pointer;
+}
