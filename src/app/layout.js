@@ -11,16 +11,24 @@ export const metadata = {
   LOVE FOR FASHION, MUSIC AND FILM.`,
   themeColor: "#F2F0EC",
   openGraph: {
-    images: "/og-image.png",
+    images: [
+      {
+        url: "https://www.samvarcia.com/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     title: "SAMVARCIA",
+    description:
+      "OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. LOVE FOR FASHION, MUSIC AND FILM.",
   },
   twitter: {
-    image: "https://www.samvarcia.com/twitter-image.png",
     card: "summary_large_image",
     title: "SAMVARCIA.COM",
     description:
       "OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. LOVE FOR FASHION, MUSIC AND FILM.",
     site: "@samvarcia",
+    images: ["https://www.samvarcia.com/og-image.png"],
   },
 };
 
