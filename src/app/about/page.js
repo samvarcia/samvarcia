@@ -35,7 +35,7 @@ export default function Page() {
               DESIGN
             </a>{" "}
             IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD.
-            LOVE FOR FASHION, MUSIC AND FILM
+            LOVE FOR FASHION, MUSIC AND FILM.
           </p>
         </div>
         <div className={styles.contact}>

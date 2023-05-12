@@ -4,8 +4,15 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "SAMVARCIA",
-  description: "SAMVARCIA - Samuel Garcia Portfolio",
+  description: `SAMUEL GARCIA - (AKA SAMVARCIA - 2004 - BOGOTA)
+  OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, 
+  PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. 
+  FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. 
+  LOVE FOR FASHION, MUSIC AND FILM.`,
   themeColor: "#F2F0EC",
+  openGraph: {
+    images: "/og-image.png",
+  },
 };
 
 const helvetica = localFont({
