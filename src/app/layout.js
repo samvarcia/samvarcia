@@ -15,14 +15,12 @@ export const metadata = {
     title: "SAMVARCIA",
   },
   twitter: {
-    card: "summary",
-    title: "SAMVARCIA",
-    description: `OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, 
-    PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. 
-    FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. 
-    LOVE FOR FASHION, MUSIC AND FILM.`,
-    creator: "@samvarcia",
-    image: "/twitter-image.png",
+    card: "summary_large_image",
+    title: "SAMVARCIA.COM",
+    description:
+      "OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. LOVE FOR FASHION, MUSIC AND FILM.",
+    site: "@samvarcia",
+    image: "https://www.samvarcia.com/twitter-image.png",
   },
 };
 
