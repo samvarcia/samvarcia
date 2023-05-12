@@ -13,6 +13,16 @@ export const metadata = {
   openGraph: {
     images: "/og-image.png",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "SAMVARCIA",
+    description: `OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, 
+    PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. 
+    FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. 
+    LOVE FOR FASHION, MUSIC AND FILM.`,
+    creator: "@samvarcia",
+    images: ["/og-image.png"],
+  },
 };
 
 const helvetica = localFont({
