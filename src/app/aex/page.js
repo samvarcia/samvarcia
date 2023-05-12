@@ -75,7 +75,6 @@ export default function Page() {
               <h1>ÆX</h1>
             </div>
             <p>Web Design, Creative Direction, Brand, UX/UI Design</p>
-            <p style={{ marginTop: "5px" }}>2023</p>
             <a
               href="https://aex.vercel.app"
               target="_blank"

@@ -40,7 +40,6 @@ export default function Page() {
               <h1>Sa!koro Website</h1>
             </div>
             <p>Web Design, Creative Direction</p>
-            <p style={{ marginTop: "5px" }}>2023</p>
             <a
               href="https://www.saikorito.com/"
               target="_blank"
