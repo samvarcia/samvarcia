@@ -15,7 +15,7 @@ export const metadata = {
     title: "SAMVARCIA",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "SAMVARCIA",
     description: `OBSESSED WITH CREATING. EXPERIENCE IN STARTUPS, WEB, 
     PRODUCT, BRANDS, GRAPHICS AND DESIGN IN GENERAL. 
