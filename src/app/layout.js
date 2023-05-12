@@ -22,7 +22,7 @@ export const metadata = {
     FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD. 
     LOVE FOR FASHION, MUSIC AND FILM.`,
     creator: "@samvarcia",
-    images: "/twitter-image.png",
+    image: "/twitter-image.png",
   },
 };
 
