@@ -12,6 +12,7 @@ export const metadata = {
   themeColor: "#F2F0EC",
   openGraph: {
     images: "/og-image.png",
+    title: "SAMVARCIA",
   },
   twitter: {
     card: "summary_large_image",
