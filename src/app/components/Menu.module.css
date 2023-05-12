@@ -7,6 +7,15 @@
   bottom: 40px;
 }
 
+.menuwrap2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 40px;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -20,6 +29,11 @@
     background: rgba(242, 240, 236, 0.32);
     backdrop-filter: blur(1.5px);
     border-radius: 17px;
+  }
+
+  .menuwrap2 {
+    background-color: none;
+    bottom: 15px;
 
   }
 
