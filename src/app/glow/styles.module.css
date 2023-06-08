@@ -3,15 +3,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly; */
   height: 90vh;
   padding: 20px;
 }
 
 .projectCopy {
-  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +51,11 @@
 .projectimg {
   height: auto;
   width: 60%;
-  /* max-width: 400px; */
   border-radius: 9px;
 }
 
 .projectText {
   width: 100%;
-  /* max-width: 800px; */
 }
 
 .projectCopyTitle {
@@ -83,10 +77,6 @@
   width: 100%;
   justify-content: space-between;
 }
-
-
-
-
 @media (max-width: 768px) {
   .project {
     height: 100%;
