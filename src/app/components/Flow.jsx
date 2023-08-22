@@ -58,7 +58,13 @@ const Flow = () => {
   return (
     <div className={styles.projectsHorizon}>
       {projects.map((project, index) => (
-        <Image src={project.src} width="400" height="450" quality={100} />
+        <Image
+          src={project.src}
+          width="400"
+          height="450"
+          quality={100}
+          loading="lazy"
+        />
       ))}
     </div>
   );
