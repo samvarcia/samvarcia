@@ -76,30 +76,24 @@ const projects = [
   },
 ];
 const Flow = () => {
-  const [contentWidth, setContentWidth] = useState(0);
   const ref = useRef(null);
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
   useEffect(() => {
-    if (ref.current) {
-      setContentWidth(ref.current.offsetWidth);
-    }
+    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
-  console.log(window.innerWidth);
+
   return (
-    <motion.div className={styles.projectsHorizonContainer}>
-      <motion.div className={styles.projectsHorizonWrapper} ref={ref}>
-        <motion.div
-          className={styles.projectsHorizonContent}
-          drag="x"
-          // dragConstraints={{
-          //   left: window.innerWidth,
-          //   right: window.innerWidth,
-          // dragConstraints={{ left: "10vw", right: "10vw" }}
-          dragConstraints={ref}
-          dragElastic={1}
-          // dragTransition={{ bounceStiffness: 50, bounceDamping: 20 }}
-          // dragSnapToOrigin={true}
-        >
-          {projects.map((project, index) => (
+    <motion.div className={styles.projectsHorizonWrapper} ref={carousel}>
+      <motion.div
+        className={styles.projectsHorizonContent}
+        drag="x"
+        dragConstraints={{ right: 0, left: -width }}
+      >
+        {projects.map((project, index) => (
+          <motion.div>
             <Image
               src={project.src}
               width="400"
@@ -107,8 +101,8 @@ const Flow = () => {
               quality={100}
               loading="lazy"
             />
-          ))}
-        </motion.div>
+          </motion.div>
+        ))}
       </motion.div>
     </motion.div>
   );
