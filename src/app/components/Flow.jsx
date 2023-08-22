@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 import styles from "./Flow.module.css";
 const projects = [
@@ -75,16 +76,21 @@ const projects = [
     alt: "AELIZA - Samvarcia",
   },
 ];
+
 const Flow = () => {
   const ref = useRef(null);
   const [width, setWidth] = useState(0);
   const carousel = useRef();
+  const router = useRouter();
 
   useEffect(() => {
     console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
-
+  const navigateToRoute = (route) => {
+    router.push(route);
+    console.log(route);
+  };
   return (
     <motion.div className={styles.projectsHorizonWrapper} ref={carousel}>
       <motion.div
@@ -93,7 +99,7 @@ const Flow = () => {
         dragConstraints={{ right: 0, left: -width }}
       >
         {projects.map((project, index) => (
-          <motion.div>
+          <motion.div onClick={() => navigateToRoute(project.route)}>
             <Image
               src={project.src}
               width="400"
