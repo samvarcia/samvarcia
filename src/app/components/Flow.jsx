@@ -6,6 +6,12 @@ import styles from "./Flow.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 const projects = [
   {
+    src: "/wm.gif",
+    class: "wm",
+    route: "/wm",
+    alt: "W&M'S - Samvarcia",
+  },
+  {
     src: "/BloopLanding.png",
     class: "web",
     route: "/bloop",
@@ -61,7 +67,7 @@ const Flow = () => {
         <Image
           src={project.src}
           width="400"
-          height="450"
+          height="400"
           quality={100}
           loading="lazy"
         />
