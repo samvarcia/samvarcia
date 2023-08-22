@@ -1,54 +1,20 @@
-.projects {
+.projectsHorizon::-webkit-scrollbar {
+  display: none;
+}
+
+.projectsHorizon {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   height: 90vh;
+  width: 100%;
+  align-items: center;
+  margin: 1px solid red;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-.web {
+
+.projectsHorizon img {
   width: auto;
-  height: 450px;
-  border-radius: 9px;
-}
-
-.vertical {
-  border-radius: 20px;
-  height: 450px;
-  width: auto;
-}
-
-.poster {
-  height: 450px;
-  width: auto;
-}
-
-.think {
-  height: 450px;
-  width: auto;
-}
-
-.bn {
-  height: 450px;
-  width: auto;
-}
-
-@media (max-width: 768px) {
-  .projects {
-    padding: 10px;
-  }
-
-  .projects a {
-    width: auto;
-  }
-
-  .projects img {
-    height: auto;
-    width: 100%;
-  }
-
-  .vertical {
-    height: 50%;
-    width: auto;
-  }
+  margin: 30px;
 }
