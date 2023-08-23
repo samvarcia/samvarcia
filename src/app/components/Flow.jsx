@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
 
 import styles from "./Flow.module.css";
 const projects = [
@@ -82,32 +83,41 @@ const Flow = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
   const router = useRouter();
+  const [isDragging, setIsDragging] = useState(false); // State to track dragging
 
   useEffect(() => {
     console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
+
   const navigateToRoute = (route) => {
-    router.push(route);
-    console.log(route);
+    if (!isDragging) {
+      router.push(route);
+      console.log(route);
+    }
   };
+
   return (
     <motion.div className={styles.projectsHorizonWrapper} ref={carousel}>
       <motion.div
         className={styles.projectsHorizonContent}
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
+        onDragStart={() => setIsDragging(true)} // Set dragging state to true
+        onDragEnd={() => setIsDragging(false)} // Set dragging state to false
       >
         {projects.map((project, index) => (
-          <motion.div onClick={() => navigateToRoute(project.route)}>
-            <Image
-              src={project.src}
-              width="400"
-              height="400"
-              quality={100}
-              loading="lazy"
-            />
-          </motion.div>
+          <AnimatePresence mode="wait">
+            <motion.div onClick={() => navigateToRoute(project.route)}>
+              <Image
+                src={project.src}
+                width="400"
+                height="400"
+                quality={100}
+                loading="lazy"
+              />
+            </motion.div>
+          </AnimatePresence>
         ))}
       </motion.div>
     </motion.div>
