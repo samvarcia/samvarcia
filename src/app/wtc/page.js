@@ -18,27 +18,30 @@ export default function Page() {
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
             <div className={styles.projectCopyTitleDate}>
-              <h1>Bonne Nuit Inspired Graphic</h1>
+              <h1>Where's The Culture?</h1>
             </div>
           </div>
+
           <div className={styles.details}>
             <div className={styles.tags}>
-              <p>Year: 2022</p>
+              <p>Year: 2023</p>
               <p>Type: Personal</p>
               <p>Graphic Design</p>
+              <p>Poster Design</p>
+              <p>Creative Direction</p>
             </div>
           </div>
         </div>
-        <div className={styles.images}>
-          <Image
-            src={"/bnsummary.png"}
-            width={1400}
-            height={787.5}
-            quality={100}
-            alt="BonneNuit"
-            priority={true}
-          />
-        </div>
+      </div>
+      <div className={styles.images}>
+        <Image
+          src={"/WTC.png"}
+          width={1400}
+          height={787.5}
+          quality={100}
+          alt="Where's the culture?"
+          priority={true}
+        />
       </div>
     </motion.section>
   );

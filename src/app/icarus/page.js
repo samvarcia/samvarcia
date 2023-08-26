@@ -74,8 +74,6 @@ export default function Page() {
             <div className={styles.projectCopyTitleDate}>
               <h1>ICARUS</h1>
             </div>
-            <p>UX/UI Design, Creative Direction, Brand, 3D Modeling</p>
-            <p style={{ marginTop: "5px" }}>2022</p>
           </div>
           <p className={styles.projectCopyDescription}>
             What would it be like if humans lived on the moon? How would an app
@@ -84,48 +82,44 @@ export default function Page() {
             nasa, the moon and the earth. Also design the different drones to
             make it possible.
           </p>
-          <div className={styles.projectTypeTools}>
-            <p>Solo</p>
-            <div className={styles.tools}>
-              <Image
-                src={"/figma.svg"}
-                width={40}
-                height={40}
-                alt="figma"
-                style={{ marginRight: "20px" }}
-              />
-              <Image
-                src={"/photoshop.svg"}
-                width={40}
-                height={40}
-                alt="photoshop"
-                style={{ marginRight: "20px" }}
-              />
-              <Image src={"/spline.png"} width={40} height={40} alt="Spline" />
+          <div className={styles.details}>
+            <div className={styles.tags}>
+              <p>UX/UI Design</p>
+              <p>Brand</p>
+              <p>Creative Direction</p>
+              <p>3D Modeling</p>
+              <p>Year: 2022</p>
+              <p>Type: Personal</p>
             </div>
           </div>
         </div>
+        <div className={styles.images}>
+          <Image
+            src={"/icarussummary1.png"}
+            width={1400}
+            height={787.5}
+            quality={100}
+            alt="ICARUS"
+            priority={true}
+          />
+          <Image
+            src={"/icarussummary2.png"}
+            width={1400}
+            height={787.5}
+            quality={100}
+            alt="ICARUS"
+            priority={true}
+          />
+          <Image
+            src={"/icarusummary3.png"}
+            width={1400}
+            height={787.5}
+            quality={100}
+            alt="ICARUS"
+            priority={true}
+          />
+        </div>
       </div>
-      {images.map((image, index) =>
-        index === currentImageIndex ? (
-          <motion.div
-            key={index}
-            className={styles.gallery}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Image
-              className={styles.projectimg}
-              priority
-              width={500}
-              height={500}
-              src={image.src}
-              alt={image.alt}
-            />
-          </motion.div>
-        ) : null
-      )}
     </motion.section>
   );
 }

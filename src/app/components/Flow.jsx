@@ -23,8 +23,8 @@ const projects = [
   },
   {
     src: "/WTC.png",
-    class: "bn",
-    route: "/bn",
+    class: "wtc",
+    route: "/wtc",
     alt: "Where's The Culture? - Samvarcia",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
   {
     src: "/ALLHEROESCREATE.png",
     class: "web",
-    route: "/ahc",
+    route: "/allheroescreate",
     alt: "ALL HEROES CREATE - Samvarcia",
   },
   {
@@ -57,12 +57,6 @@ const projects = [
     class: "think",
     route: "/glow",
     alt: "GLOW - Samvarcia",
-  },
-  {
-    src: "/INSTW.png",
-    class: "poster",
-    route: "/instw",
-    alt: "TheRollingStones - Samvarcia",
   },
   {
     src: "/ICARUS.png",
@@ -98,7 +92,14 @@ const Flow = () => {
   };
 
   return (
-    <motion.div className={styles.projectsHorizonWrapper} ref={carousel}>
+    <motion.div
+      className={styles.projectsHorizonWrapper}
+      ref={carousel}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <motion.div
         className={styles.projectsHorizonContent}
         drag="x"
@@ -108,13 +109,20 @@ const Flow = () => {
       >
         {projects.map((project, index) => (
           <AnimatePresence mode="wait">
-            <motion.div onClick={() => navigateToRoute(project.route)}>
+            <motion.div
+              onClick={() => navigateToRoute(project.route)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              exit={{ opacity: 0 }}
+            >
               <Image
                 src={project.src}
                 width="400"
                 height="400"
                 quality={100}
-                loading="lazy"
+                // loading="lazy"
+                priority={true}
               />
             </motion.div>
           </AnimatePresence>

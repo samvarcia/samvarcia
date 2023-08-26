@@ -46,6 +46,13 @@
   /* Block pointer events on this pseudo-element */
 }
 
+@media (max-width: 768px) {
+  .projectsHorizonContent img {
+    /* width: 70%; */
+    height: 200px;
+    margin: 10px;
+  }
+}
 
 /* .projectsHorizonContent::-webkit-scrollbar {
   display: none;

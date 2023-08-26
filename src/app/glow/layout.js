@@ -2,13 +2,15 @@ import styles from "./styles.module.css";
 import Menu from "../components/Menu";
 import Header from "../components/Header";
 const pages = [
+  { path: "/wm" },
   { path: "/bloop" },
-  { path: "/bn" },
+  { path: "/wtc" },
   { path: "/saikoro" },
   { path: "/aex" },
+  { path: "/allheroescreate" },
   { path: "/glow" },
-  { path: "/instw" },
   { path: "/icarus" },
+  { path: "/bn" },
   { path: "/thinkmore" },
 ];
 export default function DashboardLayout({

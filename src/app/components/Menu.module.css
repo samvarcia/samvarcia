@@ -5,6 +5,7 @@
   justify-content: center;
   position: fixed;
   bottom: 40px;
+
 }
 
 .menuwrap2 {
@@ -21,6 +22,10 @@
   align-items: center;
   justify-content: space-between;
   width: 500px;
+  background: rgba(242, 240, 236, 0.32);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  padding: 3px 40px;
 }
 
 @media (max-width: 768px) {
@@ -46,6 +51,7 @@
   .menu h1 {
     font-size: 26px;
   }
+
   .menu img {
     width: 80%;
     height: auto;

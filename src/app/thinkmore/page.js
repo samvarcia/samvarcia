@@ -39,34 +39,28 @@ export default function Page() {
             <div className={styles.projectCopyTitleDate}>
               <h1>VIDEO SAMPLES INSPIRED BY AELIZA</h1>
             </div>
-            <p>Video Creation</p>
-            <p style={{ marginTop: "5px" }}>2022</p>
-            <div className={styles.projectTypeTools}>
-              <p>Solo</p>
+          </div>
+          <div className={styles.details}>
+            <div className={styles.tags}>
+              <p>Year: 2022</p>
+              <p>Type: Personal</p>
+              <p>Video Creation</p>
+              <p>Graphic Design</p>
+              <p>3D Modeling</p>
             </div>
           </div>
         </div>
+        <div className={styles.images}>
+          <Image
+            src={"/thinkmore.gif"}
+            width={1400}
+            height={787.5}
+            quality={100}
+            alt="THINK MORE"
+            priority={true}
+          />
+        </div>
       </div>
-      {images.map((image, index) =>
-        index === currentImageIndex ? (
-          <motion.div
-            key={index}
-            className={styles.gallery}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Image
-              className={styles.projectimg}
-              priority
-              width={500}
-              height={500}
-              src={image.src}
-              alt={image.alt}
-            />{" "}
-          </motion.div>
-        ) : null
-      )}
     </motion.section>
   );
 }
