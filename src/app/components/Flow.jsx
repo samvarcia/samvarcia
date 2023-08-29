@@ -28,7 +28,7 @@ const projects = [
     alt: "Where's The Culture? - Samvarcia",
   },
   {
-    src: "/SAIKORO.png",
+    src: "/saikoro.png",
     class: "web",
     route: "/saikoro",
     alt: "Sa!koro - Samvarcia",
