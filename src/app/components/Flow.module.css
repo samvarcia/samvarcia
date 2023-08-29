@@ -3,7 +3,7 @@
 }
 
 .projectsHorizonWrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: 1px solid red; */
   overflow-x: scroll;
 }
@@ -47,10 +47,31 @@
 }
 
 @media (max-width: 768px) {
-  .projectsHorizonContent img {
-    /* width: 70%; */
+
+  /* .projectsHorizonContent img {
+    width: 70%;
     height: 200px;
     margin: 10px;
+  } */
+  .projectsHorizonWrapper {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .projectsHorizonContent {
+    margin-top: 50%;
+    margin-bottom: 50px;
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+    gap: 50px;
+    /* ... */
+  }
+
+  .projectsHorizonContent img {
+    max-height: 200px;
+    width: 100%;
+    margin: 0px;
   }
 }
 

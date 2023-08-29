@@ -75,19 +75,33 @@ const projects = [
 const Flow = () => {
   const ref = useRef(null);
   const [width, setWidth] = useState(0);
+  // const [height, setHeight] = useState(0);
   const carousel = useRef();
   const router = useRouter();
   const [isDragging, setIsDragging] = useState(false); // State to track dragging
+  const [dragDirection, setDragDirection] = useState("x"); // Initialize with "x" for desktop
+  const [dragConstraints, setDragConstraints] = useState({ right: 0, left: 0 });
 
+  // useEffect(() => {
+  //   const screenWidth = window.innerWidth;
+  //   if (screenWidth <= 768) {
+  //     setDragDirection("y");
+  //     const contentHeight = carousel.current.scrollHeight;
+  //     setDragConstraints({ top: 0, bottom: -contentHeight });
+  //   } else {
+  //     setDragDirection("x");
+  //     setDragConstraints({ right: 0, left: -width });
+  //   }
+  // }, [carousel.current]);
   useEffect(() => {
-    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+    if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
+  }, [carousel.current]);
 
   const navigateToRoute = (route) => {
     if (!isDragging) {
       router.push(route);
-      // console.log(route);
     }
   };
 
@@ -102,7 +116,7 @@ const Flow = () => {
     >
       <motion.div
         className={styles.projectsHorizonContent}
-        drag="x"
+        drag={dragDirection}
         dragConstraints={{ right: 0, left: -width }}
         onDragStart={() => setIsDragging(true)} // Set dragging state to true
         onDragEnd={() => setIsDragging(false)} // Set dragging state to false
