@@ -80,14 +80,14 @@ const Flow = () => {
   const [isDragging, setIsDragging] = useState(false); // State to track dragging
 
   useEffect(() => {
-    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
   const navigateToRoute = (route) => {
     if (!isDragging) {
       router.push(route);
-      console.log(route);
+      // console.log(route);
     }
   };
 
