@@ -12,9 +12,9 @@
     "@vercel/analytics": "^1.0.1",
     "framer-motion": "^10.10.0",
     "framer-motion-ticker": "^1.0.19",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-draggable": "^4.4.5",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"

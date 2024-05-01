@@ -2,10 +2,9 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   bottom: 40px;
-
 }
 
 .menuwrap2 {
@@ -20,12 +19,15 @@
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 500px;
-  background: rgba(242, 240, 236, 0.32);
-  backdrop-filter: blur(3px);
+  max-width: 800px;
   border-radius: 20px;
-  padding: 3px 40px;
+  /* padding: 3px 40px; */
+}
+.menu img {
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 @media (max-width: 768px) {

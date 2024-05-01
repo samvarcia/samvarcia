@@ -12,17 +12,11 @@ export default function Menu() {
     <div className={styles[className]}>
       <div className={styles.menu}>
         <Link href={"/"}>
-          <Image
-            src="/SAMVASIGN.svg"
-            alt="samvarcia"
-            width={250}
-            height={62.58}
-            priority
-          />
+          <img src="/SAMVASIGN.svg" alt="" />
         </Link>
-        <Link href={"/about"}>
+        {/* <Link href={"/about"}>
           <h1>ABOUT</h1>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
