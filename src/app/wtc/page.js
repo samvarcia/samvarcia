@@ -17,20 +17,31 @@ export default function Page() {
       <div className={styles.projectCopy}>
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
-            <div className={styles.projectCopyTitleDate}>
-              <h1>Where's The Culture?</h1>
-            </div>
+              <p>Where's the culture? --- Poster Design</p>
           </div>
+{/* 
+          <p className={styles.projectCopyDescription}>
+            Inspired by the website and branding of the{" "}
+            <a
+              className={styles.link}
+              href="https://whakandmo.com/"
+              target="_blank"
+            >
+              Whak&Mo
+            </a>{" "}
+            twins, I designed this logo that continues the aesthetic line of
+            flipping existing logos in pop culture, this collaboration led to
+            the creation of a keychain for their brand, check out their work!
+          </p>
 
           <div className={styles.details}>
             <div className={styles.tags}>
               <p>Year: 2023</p>
-              <p>Type: Personal</p>
+              <p>Type: Collaboration</p>
               <p>Graphic Design</p>
-              <p>Poster Design</p>
               <p>Creative Direction</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.images}>
@@ -39,7 +50,7 @@ export default function Page() {
           width={1400}
           height={787.5}
           quality={100}
-          alt="Where's the culture?"
+          alt="WM"
           priority={true}
         />
       </div>

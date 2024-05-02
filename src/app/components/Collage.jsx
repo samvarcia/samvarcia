@@ -80,18 +80,34 @@ const Collage = () => {
       className={styles.collage}
     >
       <ul className={styles.gridcontainer}>
-        <li className={styles.wingzItem}><img src="/wings.png" alt="WINGZ POSTER" /></li>
+        <li className={styles.wingzItem}>
+          <Link href="/">
+            <img src="/wings.png" alt="WINGZ POSTER" />
+          </Link>
+        </li>
         <li className={styles.victorianItem}><img src="/victorian.png" alt="VICTORIAN POSTER" /></li>
         <li className={styles.trustItem}><img src="/trust.png" alt="TRUST POSTER" /></li>
         <li className={styles.walletItem}><img src="/wallet.png" alt="WALLET DESIGN" /></li>
         <li className={styles.playboyItem}><img src="/playboy.png" alt="PLAYBOY TSHIRT" /></li>
-        <li className={styles.wmItem}><img src="/wm.png" alt="W&M DESIGN" /></li>
+        <li className={styles.wmItem}>
+          <Link href="/wm">
+            <img src="/wm.png" alt="W&M DESIGN" />
+          </Link>
+        </li>
         <li className={styles.circleItem}><img src="/thecircle.png" alt="THE CIRCLE BRAND" /></li>
         <li className={styles.designItem}><img src="/design.png" alt="DESIGN POSTER" /></li>
         <li className={styles.hunterItem}><img src="/hunter.png" alt="HUNTER TSHIRT" /></li>
-        <li className={styles.wtcItem}><img src="/wtc.png" alt="WTC POSTER" /></li>
+        <li className={styles.wtcItem}>
+          <Link href="/wtc">
+            <img src="/wtc.png" alt="WTC POSTER" />
+          </Link>
+          </li>
         <li className={styles.champainItem}><img src="/champain.png" alt="CHAMPAIN PRODUCT" /></li>
-        <li className={styles.heroesItem}><img src="/heroes.png" alt="HEROES POSTER" /></li>
+        <li className={styles.heroesItem}>
+          <Link href="/allheroescreate">
+            <img src="/heroes.png" alt="HEROES POSTER" />
+          </Link>
+        </li>
         <li className={styles.glowItem}><img src="/glow.png" alt="GLOW PRODUCT" /></li>
         <li className={styles.bloopItem}><img src="/bloop.png" alt="BLOOP" /></li>
       </ul>

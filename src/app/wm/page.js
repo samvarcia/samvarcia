@@ -17,11 +17,9 @@ export default function Page() {
       <div className={styles.projectCopy}>
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
-            <div className={styles.projectCopyTitleDate}>
-              <h1>W&M'S</h1>
-            </div>
+              <p>W&M's Keychain --- Product Design</p>
           </div>
-
+{/* 
           <p className={styles.projectCopyDescription}>
             Inspired by the website and branding of the{" "}
             <a
@@ -43,12 +41,12 @@ export default function Page() {
               <p>Graphic Design</p>
               <p>Creative Direction</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.images}>
         <Image
-          src={"/wm.gif"}
+          src={"/wmwhi.png"}
           width={1400}
           height={787.5}
           quality={100}
@@ -60,15 +58,7 @@ export default function Page() {
           width={1400}
           height={787.5}
           quality={100}
-          alt="wm"
-          priority={true}
-        />
-        <Image
-          src={"/wmsummary1.png"}
-          width={1400}
-          height={787.5}
-          quality={100}
-          alt="wm"
+          alt="WM"
           priority={true}
         />
         <Image
@@ -76,9 +66,10 @@ export default function Page() {
           width={1400}
           height={787.5}
           quality={100}
-          alt="wm"
+          alt="WM"
           priority={true}
         />
+
       </div>
     </motion.section>
   );
