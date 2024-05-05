@@ -8,7 +8,7 @@
   padding: 20px;
   width: 100%;
   margin-bottom: 100px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .tags {
@@ -29,9 +29,14 @@
 .images {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   justify-content: center;
-  gap: 5px;
+  max-width: 70%;
+  gap: 25px;
+}
+
+.link {
+  text-decoration: underline solid #F52508;
 }
 
 .images img {
@@ -51,22 +56,23 @@
 
 .projectCopyWrap {
   /* border: 1px solid red; */
+  margin-bottom: 10px;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   /* flex-wrap: wrap; */
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .projectCopy h1 {
   font-size: 38px;
 }
 
-.projectCopyTitle p,
-.projectTypeTools p {
+.projectCopyTitle  {
   /* margin-top: 10px; */
-  font-size: 15px;
-  color: #000;
+  font-size: 2rem;
+  letter-spacing: -0.2rem;
+  color: #F52508;
 }
 
 .projectCopyDescription {
@@ -124,8 +130,9 @@
 }
 
 @media (max-width: 768px) {
-  .projectCopy h1 {
-    font-size: 28px;
+  .projectCopyTitle  {
+  font-size: 1.3rem;
+  letter-spacing: -0.1rem;
   }
 
   .project {
@@ -147,6 +154,9 @@
     margin-top: 10px;
   }
 
+  .images{
+    max-width: 100%;
+  }
   .images img {
     width: 100%;
   }

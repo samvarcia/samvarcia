@@ -17,52 +17,58 @@ export default function Page() {
       <div className={styles.projectCopy}>
         <div className={styles.projectCopyWrap}>
           <div className={styles.projectCopyTitle}>
-            <div className={styles.projectCopyTitleDate}>
-              <h1>Glow</h1>
-            </div>
+              <p>GLOW LAMP --- Product Design</p>
           </div>
-
+{/* 
           <p className={styles.projectCopyDescription}>
-            I love beautiful things, James Turrell's work and 3D design. So, I
-            created a lamp concept that comes in four colors. I wanted to make
-            it look soft and gentle.
+            Inspired by the website and branding of the{" "}
+            <a
+              className={styles.link}
+              href="https://whakandmo.com/"
+              target="_blank"
+            >
+              Whak&Mo
+            </a>{" "}
+            twins, I designed this logo that continues the aesthetic line of
+            flipping existing logos in pop culture, this collaboration led to
+            the creation of a keychain for their brand, check out their work!
           </p>
+
           <div className={styles.details}>
             <div className={styles.tags}>
-              <p>Year: 2022</p>
-              <p>Type: Personal</p>
-              <p>3D Modeling</p>
+              <p>Year: 2023</p>
+              <p>Type: Collaboration</p>
+              <p>Graphic Design</p>
               <p>Creative Direction</p>
-              <p>Brand</p>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className={styles.images}>
-          <Image
-            src={"/glowsummary1.png"}
-            width={1400}
-            height={787.5}
-            quality={100}
-            alt="Glow"
-            priority={true}
-          />
-          <Image
-            src={"/glowsummary2.png"}
-            width={1400}
-            height={787.5}
-            quality={100}
-            alt="Glow"
-            priority={true}
-          />
-          <Image
-            src={"/greenlamp.gif"}
-            width={1400}
-            height={787.5}
-            quality={100}
-            alt="AEX"
-            priority={true}
-          />
-        </div>
+      </div>
+      <div className={styles.images}>
+        <Image
+          src={"/glow.png"}
+          width={1400}
+          height={787.5}
+          quality={100}
+          alt="GLOW LAMP"
+          priority={true}
+        />
+        <Image
+          src={"/glow4.png"}
+          width={1400}
+          height={787.5}
+          quality={100}
+          alt="glow lamp colorways"
+          priority={true}
+        />
+        <Image
+          src={"/glowtop.png"}
+          width={1400}
+          height={787.5}
+          quality={100}
+          alt="glow lamp colorways"
+          priority={true}
+        />
       </div>
     </motion.section>
   );

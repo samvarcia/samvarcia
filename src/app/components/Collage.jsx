@@ -81,35 +81,75 @@ const Collage = () => {
     >
       <ul className={styles.gridcontainer}>
         <li className={styles.wingzItem}>
-          <Link href="/">
+          <Link href="/wingz">
             <img src="/wings.png" alt="WINGZ POSTER" />
           </Link>
         </li>
-        <li className={styles.victorianItem}><img src="/victorian.png" alt="VICTORIAN POSTER" /></li>
-        <li className={styles.trustItem}><img src="/trust.png" alt="TRUST POSTER" /></li>
-        <li className={styles.walletItem}><img src="/wallet.png" alt="WALLET DESIGN" /></li>
-        <li className={styles.playboyItem}><img src="/playboy.png" alt="PLAYBOY TSHIRT" /></li>
+        <li className={styles.victorianItem}>
+          <Link href="/victoriansam">
+            <img src="/victorian.png" alt="VICTORIAN POSTER" />
+          </Link>
+        </li>
+        <li className={styles.trustItem}>
+          <Link href="/trust">
+            <img src="/trust.png" alt="TRUST POSTER" />
+          </Link>
+        </li>
+        <li className={styles.walletItem}>
+          <Link href="/wallet">
+            <img src="/wallet.png" alt="WALLET DESIGN" />
+          </Link>
+        </li>
+        <li className={styles.playboyItem}>
+          <Link href="/playboy">
+            <img src="/playboy.png" alt="PLAYBOY TSHIRT" />
+          </Link>
+          </li>
         <li className={styles.wmItem}>
           <Link href="/wm">
             <img src="/wm.png" alt="W&M DESIGN" />
           </Link>
         </li>
-        <li className={styles.circleItem}><img src="/thecircle.png" alt="THE CIRCLE BRAND" /></li>
-        <li className={styles.designItem}><img src="/design.png" alt="DESIGN POSTER" /></li>
-        <li className={styles.hunterItem}><img src="/hunter.png" alt="HUNTER TSHIRT" /></li>
+        <li className={styles.circleItem}>
+          <Link href="/thecircle">
+            <img src="/thecircle.png" alt="THE CIRCLE BRAND" />
+          </Link>
+            </li>
+        <li className={styles.designItem}>
+          <Link href="glue">
+            <img src="/design.png" alt="DESIGN POSTER" />
+          </Link>
+        </li>
+        <li className={styles.hunterItem}>
+          <Link href="/hunter">
+            <img src="/hunter.png" alt="HUNTER TSHIRT" />
+          </Link>
+        </li>
         <li className={styles.wtcItem}>
           <Link href="/wtc">
             <img src="/wtc.png" alt="WTC POSTER" />
           </Link>
           </li>
-        <li className={styles.champainItem}><img src="/champain.png" alt="CHAMPAIN PRODUCT" /></li>
+        <li className={styles.champainItem}>
+          <Link href="/champain">
+            <img src="/champain.png" alt="CHAMPAIN PRODUCT" />
+          </Link>
+          </li>
         <li className={styles.heroesItem}>
           <Link href="/allheroescreate">
             <img src="/heroes.png" alt="HEROES POSTER" />
           </Link>
         </li>
-        <li className={styles.glowItem}><img src="/glow.png" alt="GLOW PRODUCT" /></li>
-        <li className={styles.bloopItem}><img src="/bloop.png" alt="BLOOP" /></li>
+        <li className={styles.glowItem}>
+          <Link href="/glow">
+            <img src="/glow.png" alt="GLOW PRODUCT" />
+          </Link>
+        </li>
+        <li className={styles.bloopItem}>
+          <Link href="/bloop">
+            <img src="/bloop.png" alt="BLOOP" />
+          </Link>
+        </li>
       </ul>
     </motion.div>
   );
