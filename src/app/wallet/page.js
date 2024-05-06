@@ -51,7 +51,7 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="LEATHER WALLET CONCEPT"
-          priority={true}
+loading="lazy"
         />
         <Image
           src={"/wallets.png"}
@@ -59,8 +59,7 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="LEATHER WALLET CONCEPT COLORWAYS"
-          priority={true}
-        />
+loading="lazy"        />
       </div>
     </motion.section>
   );
