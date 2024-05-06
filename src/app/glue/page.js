@@ -51,8 +51,7 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="Design Poster"
-          priority={true}
-        />
+loading="lazy"        />
       </div>
     </motion.section>
   );

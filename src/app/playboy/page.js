@@ -29,16 +29,16 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="Playboy tshirt"
-          priority={true}
-        />
+          loading="lazy"   
+          />
         <Image
           src={"/PLAYBOYTEE.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="Playboy tshirt colorways"
-          priority={true}
-        />
+          loading="lazy"   
+          />
       </div>
     </motion.section>
   );

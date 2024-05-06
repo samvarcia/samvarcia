@@ -51,24 +51,24 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="WM"
-          priority={true}
-        />
+          loading="lazy"   
+          />
         <Image
           src={"/wmsummary2.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="WM"
-          priority={true}
-        />
+          loading="lazy"   
+          />
         <Image
           src={"/wmsummary3.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="WM"
-          priority={true}
-        />
+          loading="lazy"   
+          />
 
       </div>
     </motion.section>
