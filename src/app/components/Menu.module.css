@@ -32,30 +32,39 @@
 
 @media (max-width: 768px) {
   .menuwrap {
-    bottom: 15px;
+    /* bottom: 15px; */
     /* background: rgba(242, 240, 236, 0.32); */
     /* backdrop-filter: blur(1.5px); */
-    border-radius: 17px;
+    border-radius: none;
+  }
+  .menu{
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 0;
+  }
+  .menu a {
+    /* border: 1px solid red; */
+    /* width: fit-content; */
+    text-align: center;
   }
 
   .menuwrap2 {
     background-color: none;
-    bottom: 15px;
+    /* bottom: 15px; */
 
   }
 
   .menu {
-    width: 90%;
-    max-width: 500px;
-    padding: 10px;
+    width: 100%;
+    /* max-width: 500px; */
+    /* padding: 10px; */
   }
 
   .menu h1 {
-    font-size: 26px;
+    /* font-size: 26px; */
   }
-
-  .menu img {
-    width: 80%;
-    height: auto;
-  }
+.menu img{
+  width: 80%;
+}
 }

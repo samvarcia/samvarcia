@@ -90,6 +90,11 @@ const Collage = () => {
             <img src="/victorian.png" alt="VICTORIAN POSTER" />
           </Link>
         </li>
+        <li className={styles.glowItem}>
+          <Link href="/glow">
+            <img src="/glowcross.png" alt="GLOW PRODUCT" />
+          </Link>
+        </li>
         <li className={styles.trustItem}>
           <Link href="/trust">
             <img src="/trust.png" alt="TRUST POSTER" />
@@ -140,14 +145,9 @@ const Collage = () => {
             <img src="/heroes.png" alt="HEROES POSTER" />
           </Link>
         </li>
-        <li className={styles.glowItem}>
-          <Link href="/glow">
-            <img src="/glow.png" alt="GLOW PRODUCT" />
-          </Link>
-        </li>
         <li className={styles.bloopItem}>
           <Link href="/bloop">
-            <img src="/bloop.png" alt="BLOOP" />
+            <img src="/bloopconcept.png" alt="BLOOP" />
           </Link>
         </li>
       </ul>

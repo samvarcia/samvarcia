@@ -14,9 +14,7 @@ export default function Menu() {
         <Link href={"/"}>
           <img src="/SAMVASIGN.svg" alt="" />
         </Link>
-        {/* <Link href={"/about"}>
-          <h1>ABOUT</h1>
-        </Link> */}
+
       </div>
     </div>
   );

@@ -46,6 +46,8 @@
   /* Block pointer events on this pseudo-element */
 }
 
+@media only screen and (min-width: 600px) {}
+
 @media (max-width: 768px) {
 
   /* .projectsHorizonContent img {

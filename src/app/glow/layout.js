@@ -3,15 +3,19 @@ import Menu from "../components/Menu";
 import Header from "../components/Header";
 const pages = [
   { path: "/wm" },
-  { path: "/bloop" },
+  { path: "/champain" },
   { path: "/wtc" },
-  { path: "/saikoro" },
-  { path: "/aex" },
+  { path: "/hunter" },
+  { path: "/thecircle" },
+  { path: "/bloop" },
+  { path: "/playboy" },
   { path: "/allheroescreate" },
   { path: "/glow" },
-  { path: "/icarus" },
-  { path: "/bn" },
-  { path: "/thinkmore" },
+  { path: "/wallet" },
+  { path: "/glue" },
+  { path: "/wingz" },
+  { path: "/victoriansam" },
+  { path: "/trust" },
 ];
 export default function DashboardLayout({
   children, // will be a page or nested layout

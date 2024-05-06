@@ -12,6 +12,22 @@ const Header = ({ pages }) => {
     setCurrentIndex(index);
   }, [router.pathname]);
 
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowLeft') {
+        handlePrevious();
+      } else if (event.key === 'ArrowRight') {
+        handleNext();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentIndex]);
   const handlePrevious = () => {
     if (currentIndex === 0) {
       router.push(pages[pages.length - 1].path);
