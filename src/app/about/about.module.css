@@ -1,6 +1,7 @@
 .about {
   height: 100vh;
-  background-image: url('../../../public/background.png');
+  /* background-image: url('../../../public/background.png'); */
+  background-color: #F2F0EC;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,7 @@
 }
 .aboutContent {
   width: 55%;
-  color: #F2F0EC;
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
