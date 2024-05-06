@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 export default function Page() {
   return (
     <motion.section
@@ -23,11 +24,11 @@ export default function Page() {
       </div>
       <div className={styles.images}>
         <Image
-          src={"/wingsposter.png"}
+          src={"/wingsposterr.png"}
           width={1400}
           height={787.5}
           quality={100}
-          alt="ALL HEROES CREATE POSTER"
+          alt="Wingz POSTER"
           loading="lazy"
         />
       </div>

@@ -15,7 +15,7 @@ export default function Page() {
         exit={{ opacity: 0 }}
       >
         <div className={styles.aboutText}>
-          <h1>SAMUEL GARCIA (AKA SAMVARCIA - 2004 - BOGOTÁ)</h1>
+          <h1>SAMUEL GARCIA (AKA SAMVARCIA)</h1>
 
           <p>
             OBSESSED WITH CREATING. EXPERIENCE IN{" "}
