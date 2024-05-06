@@ -132,7 +132,7 @@ const Collage = () => {
         </li>
         <li className={styles.wtcItem}>
           <Link href="/wtc">
-            <img src="/wtc.png" alt="WTC POSTER" />
+            <img src="/wtcpic.png" alt="WTC POSTER" />
           </Link>
           </li>
         <li className={styles.champainItem}>
