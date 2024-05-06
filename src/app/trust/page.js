@@ -46,13 +46,13 @@ export default function Page() {
       </div>
       <div className={styles.images}>
         <Image
-          src={"/TRUST.png"}
+          src={"/trust.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="ITYGDS"
-          priority={true}
-        />
+          loading="lazy"
+          />
       </div>
     </motion.section>
   );

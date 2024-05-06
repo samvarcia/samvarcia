@@ -51,8 +51,8 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="VICTORIAN SAM POSTER"
-          priority={true}
-        />
+          loading="lazy"
+          />
       </div>
     </motion.section>
   );

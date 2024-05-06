@@ -51,88 +51,88 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc2.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc3.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc4.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc5.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc6.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc7.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc8.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc9.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc10.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
         <Image
           src={"/tc11.png"}
           width={1400}
           height={787.5}
           quality={100}
           alt="THE CIRCLE"
-          priority={true}
-        />
+          loading="lazy"
+          />
       </div>
     </motion.section>
   );
