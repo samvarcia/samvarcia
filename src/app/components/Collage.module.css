@@ -197,35 +197,36 @@ z-index: 3
 		grid-row: 10 / span 10;
 		grid-column: 15 / span 10;
 		z-index: 6;
-}
+	}
 	.playboyItem{
 		grid-row: 1 / span 8;
 		grid-column: 1 / span 15;
 		z-index: 4
-}
-.bloopItem{
-	grid-row: 21 / span 8;
-	grid-column: 12 / span 8;
-}
-.champainItem{
-	grid-row: 22 / span 8;
-	grid-column: 1 / span 12;
-	z-index: 4
-}
-.wingzItem{
-	grid-row: 19 / span 6;
-	grid-column: 23 / span 9;
-	transform: rotate(20deg);
-	z-index: 7;
-}
-.designItem{
-	z-index: 4;
-	grid-row: 14 / span 7;
-	grid-column: 1 / span 9;
-}
-.wmItem{
-grid-row: 14 / span 8;
-grid-column: 8 / span 13;
+	}
+	.bloopItem{
+		grid-row: 21 / span 8;
+		grid-column: 12 / span 8;
+		transform: rotate(30deg);
+	}
+	.champainItem{
+		grid-row: 22 / span 8;
+		grid-column: 1 / span 12;
+		z-index: 4
+	}
+	.wingzItem{
+		grid-row: 19 / span 6;
+		grid-column: 23 / span 9;
+		transform: rotate(20deg);
+		z-index: 7;
+	}
+	.designItem{
+		z-index: 4;
+		grid-row: 14 / span 7;
+		grid-column: 1 / span 9;
+	}
+	.wmItem{
+		grid-row: 14 / span 8;
+grid-column: 9 / span 13;
 transform: rotate(-6deg);
 z-index: 7;
 }
@@ -248,19 +249,28 @@ z-index: 7;
 	grid-column: 21 / span 12;
 	z-index: 5;
 	transform: rotate(20deg);
-	}
-	.wtcItem{
-		grid-row: 8 / span 11;
-		grid-column: 2 / span 12;
-		z-index: 2
+}
+.wtcItem{
+	grid-row: 8 / span 11;
+	grid-column: 2 / span 12;
+	z-index: 2
 }
 .glowItem{
 	grid-row: 23 / span 5;
 	grid-column: 23 / span 7;
 }
 .heroesItem{
-grid-row: 8 / span 10;
-grid-column: 25 / span 7;
-/* z-index: 2 */
+	grid-row: 8 / span 10;
+	grid-column: 25 / span 7;
+	/* z-index: 2 */
+}
+}
+
+@media (max-width: 376px) {
+	.wmItem{
+		grid-row: 13 / span 8;
+grid-column: 8 / span 17;
+/* transform: rotate(-6deg);
+z-index: 7; */
 }
 }
