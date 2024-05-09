@@ -51,7 +51,8 @@ export default function Page() {
           height={787.5}
           quality={100}
           alt="WM"
-loading="lazy"        />
+loading="lazy"     
+   />
       </div>
     </motion.section>
   );

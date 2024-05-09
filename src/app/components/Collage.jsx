@@ -102,17 +102,17 @@ const Collage = () => {
         </li>
         <li className={styles.walletItem}>
           <Link href="/wallet">
-            <img src="/wallet.png" alt="WALLET DESIGN" />
+            <img src="/walletpre.png" alt="WALLET DESIGN" />
           </Link>
         </li>
         <li className={styles.playboyItem}>
           <Link href="/playboy">
-            <img src="/playboy.png" alt="PLAYBOY TSHIRT" />
+            <img src="/playboy3.png" alt="PLAYBOY TSHIRT" />
           </Link>
           </li>
         <li className={styles.wmItem}>
           <Link href="/wm">
-            <img src="/wm.png" alt="W&M DESIGN" />
+            <img src="/wmpre.png" alt="W&M DESIGN" />
           </Link>
         </li>
         <li className={styles.circleItem}>
@@ -147,7 +147,7 @@ const Collage = () => {
         </li>
         <li className={styles.bloopItem}>
           <Link href="/bloop">
-            <img src="/bloopconcept.png" alt="BLOOP" />
+            <img src="/bloops.png" alt="BLOOP" />
           </Link>
         </li>
       </ul>
