@@ -273,4 +273,13 @@ grid-column: 8 / span 17;
 /* transform: rotate(-6deg);
 z-index: 7; */
 }
+.designItem{
+	z-index: 4;
+	grid-row: 14 / span 7;
+	grid-column: 3 / span 9;
+}
+.champainItem{
+	grid-row: 21 / span 8;
+	grid-column: 1 / span 12;
+}
 }
