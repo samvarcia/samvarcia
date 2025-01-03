@@ -16,8 +16,8 @@ const Gallery = ({ images }) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView="auto"
-        loop={true}
-        speed={100}
+        // loop={true}
+        speed={200}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
