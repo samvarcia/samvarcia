@@ -2,37 +2,47 @@
 
 import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Autoplay, Mousewheel } from 'swiper/modules';
 import styles from './Gallery.module.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
+import 'swiper/css/mousewheel';
+
 const Gallery = ({ images }) => {
+  // Function to handle image load and determine orientation
+  const handleImageLoad = (e) => {
+    const img = e.target;
+    const isVertical = img.naturalHeight > img.naturalWidth;
+    img.setAttribute('data-orientation', isVertical ? 'vertical' : 'horizontal');
+  };
+
   return (
     <div className={styles.container}>
       <Swiper
-        modules={[EffectCoverflow, Autoplay]}
+        modules={[EffectCoverflow, Autoplay, Mousewheel]}
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         slidesPerView="auto"
-        // loop={true}
-        speed={200}
+        speed={250}
         autoplay={{
-          delay: 5000,
+          delay: 8000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
         coverflowEffect={{
           rotate: 0,
           stretch: 1,
-          depth: 200,
-          modifier: 2,
+          depth: 300,
+          modifier: 5,
           slideShadows: false,
         }}
-        mousewheel={true}
+        mousewheel={{
+          forceToAxis: false,
+          sensitivity: 1,
+        }}
         spaceBetween={150}
-        
+        freeMode={true}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className={styles.item}>
@@ -41,6 +51,7 @@ const Gallery = ({ images }) => {
                 src={src} 
                 alt={`Image ${index + 1}`} 
                 loading="eager"
+                onLoad={handleImageLoad}
               />
             </div>
           </SwiperSlide>
