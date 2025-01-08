@@ -10,16 +10,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const images = [
-    "https://utfs.io/f/QrkWx2FyjA3Zc7TeyuzM10s6PD8GlIZ5dWRBFHVvuQqUeCmi",
-    "https://utfs.io/f/QrkWx2FyjA3ZB5cANRa6fVuz58qR1kO7rLhUYpTI9axjgbcm",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZctENaEQzM10s6PD8GlIZ5dWRBFHVvuQqUeCm",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
-    "https://utfs.io/f/QrkWx2FyjA3ZtLESMexuh9ep2bZ43VafEOBTnkNi1CGlzgWr",
+    "https://utfs.io/f/QrkWx2FyjA3ZBPWpkqla6fVuz58qR1kO7rLhUYpTI9axjgbc",
+    "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
+    "https://utfs.io/f/QrkWx2FyjA3Z5O6qTwrsxEn13oaTjFzPRl7XrSgwuDLZiH0Q",
+    "https://utfs.io/f/QrkWx2FyjA3ZUD42OWLRNaXMPTp1mdr79VfSOABUE4qZKHei",
+    "https://utfs.io/f/QrkWx2FyjA3ZbTeN7Xn0RrXaSTf5vnwyFM2eQc3WEjdmpD7k",
+    "https://utfs.io/f/QrkWx2FyjA3Z462c7o51WkPLHQKXFNZamtp76wciY0d2JRCr",
+    "https://utfs.io/f/QrkWx2FyjA3ZTGrU7ms3MaC3xVm9dseWkOnu52FiItyo1bwg",
+    "https://utfs.io/f/QrkWx2FyjA3ZooCRAHVjIkzwtVSLlCDpiT7MnPNqsG9uefmY",
+    "https://utfs.io/f/QrkWx2FyjA3Zn7EvJmfJtlKdSQUsFRcHgDqa2OeMiZf9WXmE",
+    "https://utfs.io/f/QrkWx2FyjA3ZdbZmhdPNnb9WylKgp1UjB6vrcsa075eXLPzV",
+    "https://utfs.io/f/QrkWx2FyjA3Z5SzCinrsxEn13oaTjFzPRl7XrSgwuDLZiH0Q",
   ];
   return (
     <main className={styles.main}>

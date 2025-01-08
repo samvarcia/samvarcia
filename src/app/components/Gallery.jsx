@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay, Mousewheel } from 'swiper/modules';
 import styles from './Gallery.module.css';
@@ -9,7 +9,18 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/mousewheel';
 
 const Gallery = ({ images }) => {
-  // Function to handle image load and determine orientation
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const handleImageLoad = (e) => {
     const img = e.target;
     const isVertical = img.naturalHeight > img.naturalWidth;
@@ -25,6 +36,7 @@ const Gallery = ({ images }) => {
         centeredSlides={true}
         slidesPerView="auto"
         speed={250}
+        direction={isMobile ? 'vertical' : 'horizontal'}
         autoplay={{
           delay: 8000,
           disableOnInteraction: false,
@@ -33,16 +45,17 @@ const Gallery = ({ images }) => {
         coverflowEffect={{
           rotate: 0,
           stretch: 1,
-          depth: 300,
-          modifier: 5,
+          depth: isMobile ? 50 : 200,
+          modifier: 20,
           slideShadows: false,
         }}
         mousewheel={{
           forceToAxis: false,
           sensitivity: 1,
         }}
-        spaceBetween={150}
+        spaceBetween={isMobile ? 20 : 150}
         freeMode={true}
+        className={isMobile ? styles.mobileSwiper : ''}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className={styles.item}>
