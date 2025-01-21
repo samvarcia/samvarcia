@@ -1,11 +1,13 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #000;
+  position: fixed;
+  bottom: 20px;
+  /* background: #000; */
 }
 
 .container :global(.swiper) {
@@ -91,5 +93,65 @@
 
   .container :global(.swiper-slide-active) .slideContent {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 90vh;
+    bottom: 0;
+    position: fixed;
+  }
+
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, 
+    #F2F0EC 0%,
+    rgba(242, 240, 236, 0.8) 40%,
+    rgba(242, 240, 236, 0) 100%
+  );
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .mobileSwiper {
+    height: 100% !important;
+    padding: 40px 0 60px !important;
+  }
+
+  .item {
+    width: 100% !important;
+    height: 280px !important;
+    margin: 10px 0;
+  }
+
+  .slideContent {
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .slideContent img {
+    max-width: 85%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .container :global(.swiper-slide-active) .slideContent {
+    transform: scale(1.15);
+  }
+
+  .slideContent img[data-orientation="vertical"] {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .slideContent img[data-orientation="horizontal"] {
+    width: 85%;
+    height: auto;
   }
 }
