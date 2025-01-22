@@ -14,7 +14,6 @@
 }
 
 .modalContent {
-  /* background: #111; */
   width: 90%;
   max-width: 800px;
   border-radius: 8px;
@@ -39,11 +38,14 @@
   z-index: 1001;
 }
 
-.mainImage {
+.mainImageWrapper {
+  position: relative;
   width: 100%;
-  max-height: 70vh;
+  height: 70vh;
+}
+
+.mainImage {
   object-fit: contain;
-  /* background: #000; */
 }
 
 .projectDetails {
@@ -56,9 +58,20 @@
   text-align: center;
 }
 
-.projectTitle {
+.projectTitle, .projectTitleLink {
   font-size: 2rem;
   margin: 1rem 0;
+}
+
+.projectTitleLink {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.projectTitleLink:hover {
+  opacity: 0.8;
 }
 
 .projectDescription {
@@ -89,17 +102,22 @@
   padding: 0 2rem 2rem;
 }
 
-.galleryImage {
+.galleryImageWrapper {
+  position: relative;
   width: 100%;
-  max-height: 60vh;
-  object-fit: contain;
+  height: 60vh;
   border-radius: 4px;
+  overflow: hidden;
   transition: transform 0.3s ease;
   background: #000;
 }
 
-.galleryImage:hover {
+.galleryImageWrapper:hover {
   transform: scale(1.02);
+}
+
+.galleryImage {
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -119,12 +137,11 @@
     padding: 0 1.5rem 1.5rem;
   }
   
-  .mainImage {
-    max-height: 50vh;
+  .mainImageWrapper {
+    height: 50vh;
   }
   
-  .galleryImage {
-    max-height: 40vh;
+  .galleryImageWrapper {
+    height: 40vh;
   }
 }
-

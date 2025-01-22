@@ -24,6 +24,7 @@ export default function Home() {
     {
       title: "Location a la mode SS25 Website",
       description: "The idea of a party for only models (or you can only be invited by a model) at fashion week is a great design challenge. In my first season as a designer in the team I collaborated in the construction of the visual identity of the landing page, check in menu and different graphic resources. The result demonstrates our goal, to introduce us to the industry by showing the things that matter to us, details, taste and culture.",
+      websiteUrl: "https://locationalamode.com", // Add this line
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
       images: [
         "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
@@ -44,6 +45,7 @@ export default function Home() {
     {
       title: "Nautilus 2025 Website & Brand",
       description: "Nautilus helps young people develop their passions in community with a 3 month program in San Francisco CA. Developers, artist, designers and more together doing what they are passionate about. With this spirit in mind and working closely with the founder Zelda Poem, created a visual language that comunicates the light, hopeful and commanding values of the project.",
+      websiteUrl: "https://www.nautilus.quest/", // Add this line
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZUD42OWLRNaXMPTp1mdr79VfSOABUE4qZKHei",
       images: [
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZvviEBm2ex82Ha5wN9nCJo3fZIE1LYKXcTrzu",
@@ -78,6 +80,16 @@ export default function Home() {
       tags: ["Graphic Design", "Branding"]
     },
     {
+      title: "Hot Sauce",
+      description: "Collaboration with “A Dedicated Studio” in assisting the development of the Hot Sauce website with the implementation of an interactive sound effect.",
+      websiteUrl: "https://hot-sauce-presents-staging.webflow.io/", // Add this line
+
+      mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZjMV0b4wmOulUbQRTDxdAscXfPMyn1v9S4E7j",
+      images: [
+      ],
+      tags: ["Development Assistance",]
+    },
+    {
       title: "Hunter T-shirt",
       description: "The use of thermal cameras and how they deform bodies inspired me to create this T-shirt.",
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZTGrU7ms3MaC3xVm9dseWkOnu52FiItyo1bwg",
@@ -86,6 +98,17 @@ export default function Home() {
         // Additional project images...
       ],
       tags: ["Graphic Design", "Garment Design"]
+    },
+    {
+      title: "2sday Supper Club",
+      description: "Collaboration with “A Dedicated Studio” in assisting the development of the 2sday Supper Club site integrating the Instagram API into their layout.",
+      websiteUrl: "https://www.2sdaysupperclub.com/",
+      mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZhhXFqwlpAFkYz96VoeyNPKalDJGrS7ILUOsd",
+      images: [
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZOvR0D1axUW90Ccbl7EAS4aVQXZgDydvzRJOk",
+        // Additional project images...
+      ],
+      tags: ["Development Assistance",]
     },
     {
       title: "Champain Champagne",
@@ -101,14 +124,15 @@ export default function Home() {
       tags: ["Graphic Design", "3D Design", "Branding"]
     },
     {
-      title: "ALL HEROES CREATE",
-      description: "Detailed project description goes here...",
-      mainImage: "https://utfs.io/f/QrkWx2FyjA3Zn7EvJmfJtlKdSQUsFRcHgDqa2OeMiZf9WXmE",
+      title: "Pearson Sound Website",
+      description: "Collaboration with “A Dedicated Studio” in assisting the development of the Pearson Sound site, integrating the Resident Advisor API was crucial to show the current list of upcoming gigs of the artist",
+      websiteUrl: "https://www.pearsonsound.com/",
+      mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z4MWCcb51WkPLHQKXFNZamtp76wciY0d2JRCr",
       images: [
         // "https://utfs.io/f/QrkWx2FyjA3Zn7EvJmfJtlKdSQUsFRcHgDqa2OeMiZf9WXmE",
         // Additional project images...
       ],
-      tags: ["Graphic Design", "3D Design", "Branding"]
+      tags: ["Development Assistance",]
     },
     {
       title: "Bloop Browser",
