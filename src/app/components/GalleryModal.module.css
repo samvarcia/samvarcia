@@ -1,17 +1,20 @@
 .modalOverlay {
+  /* isolation: isolate; Create new stacking context */
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.90);
-  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 100; /* Lower number but will work because of isolation */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-y: auto;
   padding: 2rem 0;
 }
+
 
 .modalContent {
   width: 90%;
@@ -35,7 +38,7 @@
   color: white;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 101; /* Just needs to be higher than modalOverlay */
 }
 
 .mainImageWrapper {
@@ -61,11 +64,14 @@
 .projectTitle, .projectTitleLink {
   font-size: 2rem;
   margin: 1rem 0;
+  letter-spacing: -0.08rem;
+
 }
 
 .projectTitleLink {
   color: white;
   text-decoration: underline;
+  text-decoration-color: #BA0806;
   text-underline-offset: 4px;
   transition: opacity 0.2s ease;
 }
@@ -77,6 +83,8 @@
 .projectDescription {
   margin: 1.5rem 0;
   line-height: 1.6;
+  letter-spacing: -0.04rem;
+
 }
 
 .tags {
@@ -88,10 +96,12 @@
 }
 
 .tag {
-  background: #333;
+  background: #fff;
+  color: #BA0806;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .gallery {

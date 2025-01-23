@@ -1,6 +1,5 @@
 "use client";
 import styles from "./Menu.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,14 +9,18 @@ export default function Menu() {
 
   return (
     <div className={styles[className]}>
-      <div className={styles.menu}>
-        <Link href={"/"}>
-          <img src="/SAMVASIGN.svg" alt="" />
+      <nav className={styles.menu}>
+        <Link href="/" className={styles.logoLink}>
+          <img 
+            src="https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZfgJClUIecQbx6walmhsiKN5vWIDfqU803tAL" 
+            alt="Samvarcia"
+            className={styles.logo}
+          />
         </Link>
-        <Link href={"/about"}>
-          <p>About</p>
+        <Link href="/about" className={styles.aboutLink}>
+          <p>About & Contact</p>
         </Link>
-      </div>
+      </nav>
     </div>
   );
 }

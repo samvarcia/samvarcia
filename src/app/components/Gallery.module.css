@@ -62,7 +62,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .mobileSwiper {
-    height: 100vh !important;
+    height: 60vh !important;
     padding: 20px 0 !important;
   }
 
@@ -98,9 +98,10 @@
 
 @media (max-width: 768px) {
   .container {
-    height: 90vh;
+    margin-top: 10px;
+    height: 80vh;
     bottom: 0;
-    position: fixed;
+    /* position: fixed; */
   }
 
   .container::before {
@@ -109,7 +110,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 20px;
     background: linear-gradient(to bottom, 
     #F2F0EC 0%,
     rgba(242, 240, 236, 0.8) 40%,

@@ -156,19 +156,6 @@ export default function Home() {
     },
     // Additional projects...
   ];
-  const images = [
-    "https://utfs.io/f/QrkWx2FyjA3ZBPWpkqla6fVuz58qR1kO7rLhUYpTI9axjgbc",
-    "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
-    "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZBRzeQHa6fVuz58qR1kO7rLhUYpTI9axjgbcm",
-    "https://utfs.io/f/QrkWx2FyjA3ZUD42OWLRNaXMPTp1mdr79VfSOABUE4qZKHei",
-    "https://utfs.io/f/QrkWx2FyjA3ZbTeN7Xn0RrXaSTf5vnwyFM2eQc3WEjdmpD7k",
-    "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zvg807o2ex82Ha5wN9nCJo3fZIE1LYKXcTrzu",
-    "https://utfs.io/f/QrkWx2FyjA3ZTGrU7ms3MaC3xVm9dseWkOnu52FiItyo1bwg",
-    "https://utfs.io/f/QrkWx2FyjA3ZooCRAHVjIkzwtVSLlCDpiT7MnPNqsG9uefmY",
-    "https://utfs.io/f/QrkWx2FyjA3Zn7EvJmfJtlKdSQUsFRcHgDqa2OeMiZf9WXmE",
-    "https://utfs.io/f/QrkWx2FyjA3ZdbZmhdPNnb9WylKgp1UjB6vrcsa075eXLPzV",
-    "https://utfs.io/f/QrkWx2FyjA3Z5SzCinrsxEn13oaTjFzPRl7XrSgwuDLZiH0Q",
-  ];
   return (
     <main className={styles.main}>
       <motion.div
@@ -176,11 +163,8 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-              {/* <ImageCarousel images={images} /> */}
-
-          <Gallery projects={projects}/>
-              {/* <Flow /> */}
         <Menu />
+        <Gallery projects={projects}/>
       </motion.div>
     </main>
   );

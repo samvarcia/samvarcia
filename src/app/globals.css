@@ -15,17 +15,11 @@ body {
 }
 
 body {
-  color: #F52508;
+  color: #BA0806;
   background: #F2F0EC
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

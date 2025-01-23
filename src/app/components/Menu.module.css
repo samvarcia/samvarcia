@@ -1,107 +1,73 @@
 .menuwrap {
+  position: fixed; /* Change from relative to fixed */
+  top: 40px;
+  left: 0;
+  right: 0;
   display: flex;
-  width: 100%;
-  align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 70px;
 }
 
 .menuwrap2 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   bottom: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 500px;
-  max-width: 800px;
-  border-radius: 20px;
-  /* padding: 3px 40px; */
-}
-.menu img {
+  align-items: center;
+  gap: 8px;
   width: 100%;
-  /* border: 1px solid red; */
-}
-.menu p{
-  letter-spacing: -0.09rem;
+  max-width: 400px;
+  padding: 0 20px;
+  z-index: 1; /* Add lower z-index here instead */
 
 }
 
-@media (max-width: 768px) {
-  .menuwrap {
-    /* bottom: 15px; */
-    /* background: rgba(242, 240, 236, 0.32); */
-    /* backdrop-filter: blur(1.5px); */
-    border-radius: none;
-  }
-  .menu{
-    justify-content: center;
-    width: 100%;
-    margin-top: 40px;
-    /* border: 1px solid red; */
-    border-radius: 0;
-  }
-  .menu a {
-    /* border: 1px solid red; */
-    /* width: fit-content; */
-    text-align: center;
-  }
-
-  .menuwrap2 {
-    background-color: none;
-    /* bottom: 15px; */
-
-  }
-
-  .menu {
-    width: 100%;
-    /* max-width: 500px; */
-    /* padding: 10px; */
-  }
-
-  .menu h1 {
-    /* font-size: 26px; */
-  }
-.menu img{
-  width: 80%;
+.logo {
+  width: 360px;
+  height: auto;
+  /* display: block; */
 }
+
+.logoLink {
+  /* display: block; */
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aboutLink p {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.08rem;
 }
 
 @media (max-width: 768px) {
   .menuwrap {
     top: 20px;
-    padding: 0 15px;
-    z-index: 100;
   }
 
   .menuwrap2 {
     bottom: 20px;
-    padding: 0 15px;
-    z-index: 100;
   }
 
   .menu {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
+    max-width: 300px;
+    z-index: 3;
   }
 
-  .menu img {
-    width: 60%;
-    max-width: 200px;
-    margin: 0 auto;
+  .logo {
+    width: 180px;
   }
 
-  .menu p {
-    margin: 10px 0;
-    font-size: 16px;
+  .aboutLink p {
+    font-size: 1rem;
   }
 }

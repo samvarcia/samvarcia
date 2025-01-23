@@ -37,8 +37,8 @@ const Gallery = ({ projects }) => {
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView="auto"
-        speed={250}
+        slidesPerView={"auto"}
+        speed={300}
         direction={isMobile ? 'vertical' : 'horizontal'}
         autoplay={{
           delay: 11000,
@@ -46,18 +46,18 @@ const Gallery = ({ projects }) => {
           pauseOnMouseEnter: true,
         }}
         coverflowEffect={{
-          rotate: 0,
-          stretch: 1,
-          depth: isMobile ? 60 : 100,
-          modifier: 8,
+          rotate: isMobile ? 0 : 0,
+          stretch: isMobile ? 3 : 1,
+          depth: isMobile ? 40 : 100,
+          modifier: isMobile ? 30 : 8,
           slideShadows: false,
         }}
         mousewheel={{
           forceToAxis: false,
           sensitivity: 1,
         }}
-        spaceBetween={isMobile ? 20 : 150}
-        freeMode={true}
+        spaceBetween={isMobile ? 40 : 150}
+        freeMode={false}
         className={isMobile ? styles.mobileSwiper : ''}
       >
         {projects.map((project, index) => (
