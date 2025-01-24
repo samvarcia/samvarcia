@@ -72,8 +72,11 @@
   color: white;
   text-decoration: underline;
   text-decoration-color: #BA0806;
-  text-underline-offset: 4px;
+  /* text-underline-offset: 4px; */
   transition: opacity 0.2s ease;
+  font-weight: 800;
+  letter-spacing: -0.08rem;
+
 }
 
 .projectTitleLink:hover {

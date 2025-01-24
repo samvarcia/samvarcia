@@ -13,7 +13,7 @@ export default function Home() {
   const projects = [
     {
       title: "Where's the culture?",
-      description: "During my constant research on pop culture, its history, elements and essence, I began to ask myself: Where is this culture? As time went by I realized that there is no single answer and if there is, it exists in a short space of time. I transferred this feeling to a graphic piece connecting it with my admiration for western culture and the outlaws in search of “Something”.",
+      description: "During my constant research on pop culture, its history, elements and essence, I began to ask myself: Where is this culture? As time went by I realized that there is no single answer and if there is, it exists in a short space and time. I transferred this feeling to a graphic piece connecting it with my admiration for western culture and the outlaws in search of “Something”.",
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZBPWpkqla6fVuz58qR1kO7rLhUYpTI9axjgbc",
       images: [
         // "https://utfs.io/f/QrkWx2FyjA3ZBPWpkqla6fVuz58qR1kO7rLhUYpTI9axjgbc",
@@ -27,7 +27,11 @@ export default function Home() {
       websiteUrl: "https://locationalamode.com", // Add this line
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
       images: [
-        "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZOvNtQakxUW90Ccbl7EAS4aVQXZgDydvzRJOk",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZgCY8SYH25APhM0DkLS49VFKvn1YpOZeJTR6r",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zrq0EHPUka0kgVzs3vSecNGMHupZU6q7OJ9Dn",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZsWyRcJNdHVkBWOXxwv906PEbCGIlDmc538qM",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zx22QVipDCylp7sPqo0fNaIrUkSExjLh1e45b",
         // Additional project images...
       ],
       tags: ["Graphic Design", "Web Design", "Web Development"]
@@ -40,7 +44,7 @@ export default function Home() {
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZFCiJzEoaiXdqm9LnwZYNuES2gotCBxRVU0Il",
         // Additional project images...
       ],
-      tags: ["Graphic Design", "Garment Design",]
+      tags: ["Graphic Design", "Accessory design",]
     },
     {
       title: "Nautilus 2025 Website & Brand",
@@ -81,7 +85,7 @@ export default function Home() {
     },
     {
       title: "Hot Sauce",
-      description: "Collaboration with “A Dedicated Studio” in assisting the development of the Hot Sauce website with the implementation of an interactive sound effect.",
+      description: "Collaboration with “A Dedicated Studio” assisting the development of the Hot Sauce website with the implementation of an interactive sound effect.",
       websiteUrl: "https://hot-sauce-presents-staging.webflow.io/", // Add this line
 
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZjMV0b4wmOulUbQRTDxdAscXfPMyn1v9S4E7j",
@@ -101,7 +105,7 @@ export default function Home() {
     },
     {
       title: "2sday Supper Club",
-      description: "Collaboration with “A Dedicated Studio” in assisting the development of the 2sday Supper Club site integrating the Instagram API into their layout.",
+      description: "Collaboration with “A Dedicated Studio” assisting the development of the 2sday Supper Club website integrating the Instagram API into their layout.",
       websiteUrl: "https://www.2sdaysupperclub.com/",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZhhXFqwlpAFkYz96VoeyNPKalDJGrS7ILUOsd",
       images: [
@@ -125,7 +129,7 @@ export default function Home() {
     },
     {
       title: "Pearson Sound Website",
-      description: "Collaboration with “A Dedicated Studio” in assisting the development of the Pearson Sound site, integrating the Resident Advisor API was crucial to show the current list of upcoming gigs of the artist",
+      description: "Collaboration with “A Dedicated Studio” assisting the development of the Pearson Sound website, integrating the Resident Advisor API for the display of the current list of upcoming gigs of the artist",
       websiteUrl: "https://www.pearsonsound.com/",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z4MWCcb51WkPLHQKXFNZamtp76wciY0d2JRCr",
       images: [
