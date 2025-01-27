@@ -47,7 +47,7 @@ const Gallery = ({ projects }) => {
         }}
         coverflowEffect={{
           rotate: isMobile ? 0 : 0,
-          stretch: isMobile ? 3 : 1,
+          stretch: isMobile ? 0 : 1,
           depth: isMobile ? 40 : 100,
           modifier: isMobile ? 9 : 8,
           slideShadows: false,
@@ -57,7 +57,7 @@ const Gallery = ({ projects }) => {
           sensitivity: 1,
         }}
         spaceBetween={isMobile ? 40 : 150}
-        freeMode={false}
+        freeMode={true}
         className={isMobile ? styles.mobileSwiper : ''}
       >
         {projects.map((project, index) => (
