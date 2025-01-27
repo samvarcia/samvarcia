@@ -49,14 +49,14 @@ const Gallery = ({ projects }) => {
           rotate: isMobile ? 0 : 0,
           stretch: isMobile ? 0 : 1,
           depth: isMobile ? 40 : 100,
-          modifier: isMobile ? 9 : 8,
+          modifier: isMobile ? 0 : 8,
           slideShadows: false,
         }}
         mousewheel={{
           forceToAxis: false,
           sensitivity: 1,
         }}
-        spaceBetween={isMobile ? 40 : 150}
+        spaceBetween={isMobile ? 60 : 150}
         freeMode={true}
         className={isMobile ? styles.mobileSwiper : ''}
       >
