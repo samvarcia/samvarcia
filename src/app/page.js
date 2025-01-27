@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       title: "Location a la mode SS25 WristBand",
-      description: "The moment I knew we had to design a wristband for the event I found an opportunity to do something different, most events give ugly and forgettable wristbands. With this in mind I thought of a design that was in line with the current objectives of the brand and could differentiate us. The models loved it ",
+      description: "The moment I knew we had to design a wristband for the event I found an opportunity to do something different, most events give ugly and forgettable wristbands. With this in mind I thought of a design that was in line with the current constraints of the brand and could differentiate us. The models loved it ",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZBRzeQHa6fVuz58qR1kO7rLhUYpTI9axjgbcm",
       images: [
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZFCiJzEoaiXdqm9LnwZYNuES2gotCBxRVU0Il",
@@ -48,7 +48,7 @@ export default function Home() {
     },
     {
       title: "Nautilus 2025 Website & Brand",
-      description: "Nautilus helps young people develop their passions in community with a 3 month program in San Francisco CA. Developers, artist, designers and more together doing what they are passionate about. With this spirit in mind and working closely with the founder Zelda Poem, created a visual language that comunicates the light, hopeful and commanding values of the project.",
+      description: "Nautilus helps young people develop their passions in community with a 3 month program in San Francisco CA. Developers, artist, designers and more together doing what they are passionate about. With this spirit in mind and working closely with the founder Zelda Poem, created a visual language that comunicates the light, hopeful and commanding values of the project",
       websiteUrl: "https://www.nautilus.quest/", // Add this line
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZUD42OWLRNaXMPTp1mdr79VfSOABUE4qZKHei",
       images: [
@@ -59,18 +59,18 @@ export default function Home() {
     },
     {
       title: "W&M'S Keychain",
-      description: "Inspired by the work of the proactive cultural aware Whak&Mo twins and their use of logos, designed this interpolation that led to our collaboration in the design of this keychain accesory",
+      description: "Inspired by the work of the proactive cultural aware Whak&Mo twins and their use of logos, designed this interpolation that led to our collaboration in the design of this keychain accessory",
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZbTeN7Xn0RrXaSTf5vnwyFM2eQc3WEjdmpD7k",
       images: [
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z7oeYIkA1uU4T0G3fIWvtlpicREP8X5MezCkb",
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zk01c5BX21OX4lct6IH7NMDQuJgF3hzCVp5Zi",
         // Additional project images...
       ],
-      tags: ["Graphic Design", "Accesorie Design"]
+      tags: ["Graphic Design", "Accessory Design"]
     },
     {
       title: "The Circle Brand",
-      description: "The Circle is a community of people doing stuff that they like, where they share stories of what is behing their creations and reflect on others,, from all around the world and all types of disciplines. With this in mind designed the Brand, focusing on the gathering of humans and their sharings.",
+      description: "The Circle is a community of people doing what they love, where they share stories of what is behing their creations and reflect on the experiences other shares, from all around the world and all types of disciplines. With this in mind designed the Brand, focusing on the gathering of humans and their sharings.",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zvg807o2ex82Ha5wN9nCJo3fZIE1LYKXcTrzu",
       images: [
         "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zx2teVYWDCylp7sPqo0fNaIrUkSExjLh1e45b",
@@ -82,6 +82,16 @@ export default function Home() {
         // Additional project images...
       ],
       tags: ["Graphic Design", "Branding"]
+    },
+    {
+      title: "Saintwoods Vodka Ads",
+      description: "Two ad concepts designed for the Saintwoods Vodka line",
+      mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZD6armFvvteIBfJWzoDqZ6TQ3pyjPka8XGh9n",
+      images: [
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Ztgen1Duh9ep2bZ43VafEOBTnkNi1CGlzgWrx",
+        // Additional project images...
+      ],
+      tags: ["Ad Design"]
     },
     {
       title: "Hot Sauce",
@@ -138,6 +148,7 @@ export default function Home() {
       ],
       tags: ["Development Assistance",]
     },
+
     {
       title: "Bloop Browser",
       description: "I collaborated with the startup Bloop in the creation of their landing page and initial branding. I was also part of the Techstars program in which I expanded my knowledge in the startup and venturing world.",

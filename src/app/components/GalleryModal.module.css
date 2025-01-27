@@ -32,7 +32,7 @@
 .closeButton {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 50px;
   background: none;
   border: none;
   color: white;
@@ -136,6 +136,9 @@
 @media (max-width: 768px) {
   .modalOverlay {
     padding: 1rem 0;
+  }
+  .closeButton{
+    right: 20px;
   }
 
   .modalContent {

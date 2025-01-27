@@ -18,24 +18,7 @@ export default function Page() {
           <h1>SAMUEL GARCIA (AKA SAMVARCIA)</h1>
 
           <p>
-            OBSESSED WITH CREATING. EXPERIENCE IN{" "}
-            <a
-              href="https://www.semana.com/historia-de-samuel-garcia-cofundador-de-uziday/266407/"
-              target="_blank"
-              className={styles.link}
-            >
-              STARTUPS
-            </a>
-            , WEB, PRODUCT, BRANDS, GRAPHICS AND{" "}
-            <a
-              href="https://www.are.na/samuel-garcia"
-              target="_blank"
-              className={styles.link}
-            >
-              DESIGN
-            </a>{" "}
-            IN GENERAL. FOCUSED ON BRINGING 10 STAR EXPERIENCES TO THE WORLD.
-            LOVE FOR FASHION, MUSIC AND FILM.
+          Throughout my life I have been influenced by great works of creativity. And that has become my purpose to be able to channel all my ideas, to do it in the highest way, no matter the area.
           </p>
         </div>
         <div className={styles.contact}>
