@@ -38,7 +38,7 @@ const Gallery = ({ projects }) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
-        speed={300}
+        speed={280}
         direction={isMobile ? 'vertical' : 'horizontal'}
         autoplay={{
           delay: 11000,
@@ -49,7 +49,7 @@ const Gallery = ({ projects }) => {
           rotate: isMobile ? 0 : 0,
           stretch: isMobile ? 3 : 1,
           depth: isMobile ? 40 : 100,
-          modifier: isMobile ? 30 : 8,
+          modifier: isMobile ? 9 : 8,
           slideShadows: false,
         }}
         mousewheel={{
