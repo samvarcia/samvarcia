@@ -113,7 +113,7 @@
     height: 45px;
     background: linear-gradient(to bottom, 
     #F2F0EC 0%,
-    rgba(242, 240, 236, 0.8) 60%,
+    rgba(242, 240, 236, 0.8) 40%,
     rgba(242, 240, 236, 0) 100%
   );
     z-index: 10;
