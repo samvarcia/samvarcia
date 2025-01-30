@@ -57,6 +57,17 @@ export default function Home() {
       ],
       tags: ["Graphic Design", "Web Design", "Web Development", "Branding"]
     },
+    
+    {
+      title: "Bloop Browser",
+      description: "I collaborated with the startup Bloop in the creation of their landing page and initial branding. I was also part of the Techstars program in which I expanded my knowledge in the startup and venturing world.",
+      mainImage: "https://utfs.io/f/QrkWx2FyjA3ZdbZmhdPNnb9WylKgp1UjB6vrcsa075eXLPzV",
+      images: [
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z2wzWfL7JMlzwnKvQPpxN3ShUjkDbIA5fBog9",
+        // Additional project images...
+      ],
+      tags: ["Web Design", "Web Development", "Branding"]
+    },
     {
       title: "W&M'S Keychain",
       description: "Inspired by the work of the proactive cultural aware Whak&Mo twins and their use of logos, designed this interpolation that led to our collaboration in the design of this keychain accessory",
@@ -147,17 +158,6 @@ export default function Home() {
         // Additional project images...
       ],
       tags: ["Development Assistance",]
-    },
-
-    {
-      title: "Bloop Browser",
-      description: "I collaborated with the startup Bloop in the creation of their landing page and initial branding. I was also part of the Techstars program in which I expanded my knowledge in the startup and venturing world.",
-      mainImage: "https://utfs.io/f/QrkWx2FyjA3ZdbZmhdPNnb9WylKgp1UjB6vrcsa075eXLPzV",
-      images: [
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z2wzWfL7JMlzwnKvQPpxN3ShUjkDbIA5fBog9",
-        // Additional project images...
-      ],
-      tags: ["Web Design", "Web Development", "Branding"]
     },
     {
       title: "PlayBoy T-shirt",
