@@ -18,13 +18,14 @@ export default function Page() {
           <h1>SAMUEL GARCIA (AKA SAMVARCIA)</h1>
 
           <p>
-          Throughout my life I have been influenced by great works of creativity. And that has become my purpose to be able to channel all my ideas, to do it in the highest way, no matter the area.
+            Multidisciplinary designer focused on branding & web design/dev 
           </p>
+          <p>Started as a Frontend Developer at 14 with experience in the startup world. I discovered where design could lead me, and since then I've worked in different areas of design, graphics, fashion, advertising, branding while continuing to evolve my coding skills, bringing the best of both worlds into projects across different industries.</p>
         </div>
         <div className={styles.contact}>
-          <a href="mailto:samvarcia@gmail.com">EMAIL</a>
+          <a href="mailto:sam@samvarcia.com">EMAIL</a>
           <a href="https://twitter.com/samvarcia" target="_blank">
-            TWITTER
+            X/TWITTER
           </a>
           <a href="https://www.instagram.com/samvarcia/" target="_blank">
             INSTAGRAM

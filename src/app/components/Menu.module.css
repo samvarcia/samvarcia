@@ -18,14 +18,22 @@
 
 .menu {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 28px;
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
   padding: 0 20px;
   z-index: 1; /* Add lower z-index here instead */
-
+}
+.menuText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  gap: 20px;
 }
 
 .logo {
@@ -45,11 +53,20 @@
 
 .aboutLink p {
   margin: 0;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   letter-spacing: -0.08rem;
 }
-
+.menu p{
+  color: black;
+}
 @media (max-width: 768px) {
+  .menu{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menuText{
+    font-size: 0.7rem;
+  }
   .menuwrap {
     top: 20px;
   }
@@ -68,6 +85,6 @@
   }
 
   .aboutLink p {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
