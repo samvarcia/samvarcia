@@ -9,7 +9,7 @@ export default function Menu() {
 
   return (
     <div className={styles[className]}>
-      <nav className={styles.menu}>
+      {className === "menuwrap2" ? (
         <Link href="/" className={styles.logoLink}>
           <img 
             src="https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZfgJClUIecQbx6walmhsiKN5vWIDfqU803tAL" 
@@ -17,13 +17,23 @@ export default function Menu() {
             className={styles.logo}
           />
         </Link>
-        <div className={styles.menuText}>
-          <p>Creating cohesive design where technical function meets cultural & business awareness</p>
-          <Link href="/about" className={styles.aboutLink}>
-            <p>About & Contact</p>
+      ) : (
+        <nav className={styles.menu}>
+          <Link href="/" className={styles.logoLink}>
+            <img 
+              src="https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZfgJClUIecQbx6walmhsiKN5vWIDfqU803tAL" 
+              alt="Samvarcia"
+              className={styles.logo}
+            />
           </Link>
-        </div>
-      </nav>
+          <div className={styles.menuText}>
+            <p>Creating cohesive design where technical function meets cultural & business awareness</p>
+            <Link href="/about" className={styles.aboutLink}>
+              <p>About & Contact</p>
+            </Link>
+          </div>
+        </nav>
+      )}
     </div>
   );
 }

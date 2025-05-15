@@ -1,3 +1,80 @@
-.main {
+
+.layoutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.menuFixed {
+
+  height: 100vh;
+  width: 400px; /* or your preferred width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  /* border-right: 1px solid #eee; */
+}
+
+.projectsScrollArea {
+  margin-left: 400px; /* same as menu width */
+  height: 100vh;
+  overflow-y: auto;
+  width: calc(100vw - 400px);
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f5f3ef; */
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 60px; */
+  /* padding: 0 4vw; */
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 2vw;
+  }
+  .layoutWrapper {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+    overflow: visible;
+  }
+  .menuFixed {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    /* border-bottom: 1px solid #eee; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 50px 0px;
+  }
+  .projectsScrollArea {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    padding: 0 0 40px 0;
+    align-items: stretch;
+    justify-content: center;
+  }
 }

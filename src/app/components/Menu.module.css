@@ -1,48 +1,51 @@
 .menuwrap {
-  position: fixed; /* Change from relative to fixed */
-  top: 40px;
-  left: 0;
-  right: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  max-width: 400px;
+  /* min-width: 180px; */
+  /* height: 100%; */
+  /* Remove any fixed/absolute positioning */
 }
 
 .menuwrap2 {
-  position: fixed;
-  bottom: 40px;
-  left: 0;
-  right: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .menu {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 28px;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 20px;
-  z-index: 1; /* Add lower z-index here instead */
+  gap: 20px;
+  /* width: 200%; */
+
 }
 .menuText{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-  gap: 20px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+  font-size: 1.4rem;
+  letter-spacing: -0.08rem;
+
 }
 
 .logo {
-  width: 360px;
+  width: 400px;
   height: auto;
-  /* display: block; */
-}
-
-.logoLink {
   /* display: block; */
 }
 
@@ -62,10 +65,13 @@
 @media (max-width: 768px) {
   .menu{
     flex-direction: column;
+    align-items: center;
     gap: 5px;
   }
   .menuText{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    align-items: center;
+    text-align: center;
   }
   .menuwrap {
     top: 20px;
@@ -85,6 +91,26 @@
   }
 
   .aboutLink p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menuwrap {
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    height: auto;
+    padding: 0px 15px;
+  }
+  .menuwrap2{
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 }

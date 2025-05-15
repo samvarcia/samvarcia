@@ -1,0 +1,62 @@
+.ProjectsContainer {
+  column-count: 2;
+  column-gap: 30px;
+  width: 100%;
+  /* max-width: 900px; */
+  /* margin: 2rem auto; */
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.ProjectCard {
+  display: block;
+  margin-bottom: 30px;
+  break-inside: avoid;
+}
+
+.ProjectImage {
+  width: 100%;
+}
+
+.ProjectContent {
+  padding: 16px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ProjectTitleTags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ProjectTitle {
+  font-weight: bold;
+  flex: 1;
+  font-size: 1rem;
+  letter-spacing: -0.03rem;
+}
+
+.ProjectTags {
+  display: flex;
+  /* gap: 6px; */
+  /* flex-wrap: wrap; */
+}
+
+.ProjectTag {
+  background: #eee;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .ProjectsContainer {
+    column-count: 1;
+    column-gap: 0;
+    padding: 20px 4vw;
+  }
+}

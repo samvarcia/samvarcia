@@ -156,3 +156,92 @@
     height: auto;
   }
 }
+
+/* --- New Grid Gallery Styles --- */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 32px 0 32px 0;
+  align-self: center;
+}
+.gridContainer {
+  width: 600px;
+  max-width: 100%;
+  /* ...rest of your styles */
+}
+.card {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: none;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #f2f0ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 8px;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-weight: normal;
+}
+
+@media (max-width: 900px) {
+  .gridContainer {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px 0;
+  }
+}

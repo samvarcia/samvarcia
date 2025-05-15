@@ -14,9 +14,9 @@ const GalleryModal = ({ project, onClose }) => {
   }, []);
 
   const isWebProject = project.tags.some(tag => 
-    tag === 'Web Design' || 
+    tag === 'Web Design & Dev' || 
     tag === 'Development Assistance' || 
-    tag === 'Web Development'
+    tag === 'Web Dev'
   );
 
   const ProjectTitle = () => {
