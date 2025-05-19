@@ -18,11 +18,11 @@ export default function Home() {
       websiteUrl: "https://locationalamode.com", // Add this line
       mainImage: "https://utfs.io/f/QrkWx2FyjA3ZFgVSrBIoaiXdqm9LnwZYNuES2gotCBxRVU0I",
       images: [
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZOvNtQakxUW90Ccbl7EAS4aVQXZgDydvzRJOk",
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZgCY8SYH25APhM0DkLS49VFKvn1YpOZeJTR6r",
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zrq0EHPUka0kgVzs3vSecNGMHupZU6q7OJ9Dn",
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZsWyRcJNdHVkBWOXxwv906PEbCGIlDmc538qM",
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zx22QVipDCylp7sPqo0fNaIrUkSExjLh1e45b",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z4bImZA51WkPLHQKXFNZamtp76wciY0d2JRCr",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZlTWEvuOKtuzce5Yvr03jdRZkMEHlnxJm6AW7",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZOmForexUW90Ccbl7EAS4aVQXZgDydvzRJOkn",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZjSXE7ywmOulUbQRTDxdAscXfPMyn1v9S4E7j",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZhodhT1lpAFkYz96VoeyNPKalDJGrS7ILUOsd",
         // Additional project images...
       ],
       tags: ["Web Design & Dev"]
@@ -63,8 +63,8 @@ export default function Home() {
       description: "Inspired by the work of the proactive cultural aware Whak&Mo twins and their use of logos, designed this interpolation that led to our collaboration in the design of this keychain accessory",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZTWCHlr3MaC3xVm9dseWkOnu52FiItyo1bwgD",
       images: [
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z7oeYIkA1uU4T0G3fIWvtlpicREP8X5MezCkb",
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Zk01c5BX21OX4lct6IH7NMDQuJgF3hzCVp5Zi",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z2GszWw7JMlzwnKvQPpxN3ShUjkDbIA5fBog9",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Z94CF67lMam85VFI6BW1EPuZMCD4LfTJvkYOx",
         // Additional project images...
       ],
       tags: ["Accessory Design"]
@@ -131,7 +131,7 @@ export default function Home() {
       description: "Two ad concepts designed for the Saintwoods Vodka line",
       mainImage: "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZsDeKokNdHVkBWOXxwv906PEbCGIlDmc538qM",
       images: [
-        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3Ztgen1Duh9ep2bZ43VafEOBTnkNi1CGlzgWrx",
+        "https://6q3qtzvyuz.ufs.sh/f/QrkWx2FyjA3ZX5PlLKq6DbSofKs1ux9GWLwQYyvrj75deAq0",
         // Additional project images...
       ],
       tags: ["Ad Design"]

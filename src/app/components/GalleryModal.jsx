@@ -73,7 +73,7 @@ const GalleryModal = ({ project, onClose }) => {
                     alt={`${project.title} - Image ${index + 1}`}
                     className={styles.galleryImage}
                     fill
-                    sizes="(max-width: 768px) 95vw, 800px"
+                    sizes="(max-width: 1068px) 95vw, 1000px"
                     quality={85}
                   />
                 </div>
