@@ -27,7 +27,7 @@ export default function Menu() {
             />
           </Link>
           <div className={styles.menuText}>
-            <p>Multidisciplinary designer and Fronted developer</p>
+            <p>Multidisciplinary designer and Frontend developer</p>
             <Link href="/about" className={styles.aboutLink}>
               <p>About & Contact</p>
             </Link>
